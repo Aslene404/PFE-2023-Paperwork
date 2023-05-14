@@ -1,0 +1,27 @@
+\acswitchoff 
+\babel@toc {english}{}\relax 
+\setcounter {tocdepth}{2}
+\contentsline {chapter}{\numberline {1}General framework of the project}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Presentation of the host organization}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Project presentation}{4}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Context}{4}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Problem}{7}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Proposed solution}{7}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.4}Objectives}{8}{subsection.1.2.4}%
+\contentsline {section}{\numberline {1.3}Study of the existing}{9}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Development process}{11}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Incremental development}{11}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Provisional schedule of tasks}{11}{subsection.1.4.2}%
+\contentsline {chapter}{\numberline {2}Specification of needs}{13}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Identification of actors}{13}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Functional Needs}{15}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Non-functional Needs}{16}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Use case diagrams}{17}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Global use case diagram}{17}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Use case refinement}{18}{subsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.2.1}Register use case refinement}{18}{subsubsection.2.4.2.1}%
+\contentsline {subsubsection}{\numberline {2.4.2.2}Login use case refinement}{21}{subsubsection.2.4.2.2}%
+\contentsline {subsubsection}{\numberline {2.4.2.3}Company search use case refinement}{23}{subsubsection.2.4.2.3}%
+\contentsline {subsubsection}{\numberline {2.4.2.4}Follow Company use case refinement}{25}{subsubsection.2.4.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.2.5}Purchase Documents use case refinement}{27}{subsubsection.2.4.2.5}%
+\setcounter {tocdepth}{3}

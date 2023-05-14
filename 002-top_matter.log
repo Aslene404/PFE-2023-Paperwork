@@ -1,0 +1,808 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 21.12) (preloaded format=pdflatex 2022.2.19)  20 FEB 2022 00:51
+entering extended mode
+ \write18 enabled.
+ %&-line parsing enabled.
+**./002-top_matter.tex
+(002-top_matter.tex
+LaTeX2e <2021-11-15> patch level 1
+L3 programming layer <2021-11-22>
+
+! LaTeX Error: Environment titlepage undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 \begin{titlepage}
+                      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \begin{center}
+                   
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 13--13
+[] 
+ []
+
+
+! LaTeX Error: Environment tabularx undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20   \begin{tabularx}
+                       {\textwidth}{ @{} p{0.4\textwidth} @{} m{0.2\textwidt...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.20   \begin{tabularx}{\textwidth}
+                                   { @{} p{0.4\textwidth} @{} m{0.2\textwidt...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.20   \begin{tabularx}{\textwidth}
+                                   { @{} p{0.4\textwidth} @{} m{0.2\textwidt...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.20 ...abularx}{\textwidth}{ @{} p{0.4\textwidth}
+                                                   @{} m{0.2\textwidth} @{} ...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.20 ...abularx}{\textwidth}{ @{} p{0.4\textwidth}
+                                                   @{} m{0.2\textwidth} @{} ...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.20 ... @{} p{0.4\textwidth} @{} m{0.2\textwidth}
+                                                   @{} p{0.4\textwidth} @{} }
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.20 ... @{} p{0.4\textwidth} @{} m{0.2\textwidth}
+                                                   @{} p{0.4\textwidth} @{} }
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Missing number, treated as zero.
+<to be read again> 
+                   }
+l.20 ... @{} m{0.2\textwidth} @{} p{0.4\textwidth}
+                                                   @{} }
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   }
+l.20 ... @{} m{0.2\textwidth} @{} p{0.4\textwidth}
+                                                   @{} }
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+Overfull \hbox (7.1944pt too wide) in paragraph at lines 20--26
+ \OT1/cmr/m/n/9 @ 
+ []
+
+
+Overfull \hbox (16.95822pt too wide) in paragraph at lines 20--26
+ \OT1/cmr/m/n/9 p0.4 
+ []
+
+
+Overfull \hbox (7.1944pt too wide) in paragraph at lines 20--26
+ \OT1/cmr/m/n/9 @ 
+ []
+
+
+Overfull \hbox (19.52765pt too wide) in paragraph at lines 20--26
+ \OT1/cmr/m/n/9 m0.2 
+ []
+
+
+Overfull \hbox (7.1944pt too wide) in paragraph at lines 20--26
+ \OT1/cmr/m/n/9 @ 
+ []
+
+
+Overfull \hbox (16.95822pt too wide) in paragraph at lines 20--26
+ \OT1/cmr/m/n/9 p0.4 
+ []
+
+
+Overfull \hbox (7.1944pt too wide) in paragraph at lines 20--26
+ \OT1/cmr/m/n/9 @ 
+ []
+
+
+Overfull \hbox (14.00613pt too wide) in paragraph at lines 20--26
+ \OT1/cmr/m/n/9 Re- 
+ []
+
+
+Overfull \hbox (18.49988pt too wide) in paragraph at lines 20--26
+ \OT1/cmr/m/n/9 pub- 
+ []
+
+
+Overfull \hbox (9.24994pt too wide) in paragraph at lines 20--26
+ \OT1/cmr/m/n/9 lic 
+ []
+
+
+Overfull \hbox (7.45134pt too wide) in paragraph at lines 20--26
+ \OT1/cmr/m/n/9 of 
+ []
+
+
+Overfull \hbox (29.59981pt too wide) in paragraph at lines 20--26
+ \OT1/cmr/m/n/9 Tunisia 
+ []
+
+
+Overfull \hbox (34.50114pt too wide) in paragraph at lines 27--28
+ []\OT1/cmr/m/n/9 Ministry 
+ []
+
+
+Overfull \hbox (7.45134pt too wide) in paragraph at lines 27--28
+ \OT1/cmr/m/n/9 of 
+ []
+
+
+Overfull \hbox (27.00188pt too wide) in paragraph at lines 27--28
+ \OT1/cmr/m/n/9 Higher 
+ []
+
+
+Overfull \hbox (14.51656pt too wide) in paragraph at lines 27--28
+ \OT1/cmr/m/n/9 Ed- 
+ []
+
+
+Overfull \hbox (8.22217pt too wide) in paragraph at lines 27--28
+ \OT1/cmr/m/n/9 u- 
+ []
+
+
+Overfull \hbox (11.81937pt too wide) in paragraph at lines 27--28
+ \OT1/cmr/m/n/9 ca- 
+ []
+
+
+Overfull \hbox (18.49988pt too wide) in paragraph at lines 27--28
+ \OT1/cmr/m/n/9 tion, 
+ []
+
+
+Overfull \hbox (14.90268pt too wide) in paragraph at lines 27--28
+ \OT1/cmr/m/n/9 Sci- 
+ []
+
+
+Overfull \hbox (12.33672pt too wide) in paragraph at lines 27--28
+ \OT1/cmr/m/n/9 en- 
+ []
+
+
+Overfull \hbox (15.41656pt too wide) in paragraph at lines 27--28
+ \OT1/cmr/m/n/9 tific 
+ []
+
+
+Overfull \hbox (14.00613pt too wide) in paragraph at lines 27--28
+ \OT1/cmr/m/n/9 Re- 
+ []
+
+
+Overfull \hbox (24.99913pt too wide) in paragraph at lines 27--28
+ \OT1/cmr/m/n/9 search 
+ []
+
+
+Overfull \hbox (14.90268pt too wide) in paragraph at lines 27--28
+ \OT1/cmr/m/n/9 and 
+ []
+
+
+Overfull \hbox (11.56102pt too wide) in paragraph at lines 27--28
+ \OT1/cmr/m/n/9 In- 
+ []
+
+
+Overfull \hbox (14.15268pt too wide) in paragraph at lines 27--28
+ \OT1/cmr/m/n/9 for- 
+ []
+
+
+Overfull \hbox (15.41656pt too wide) in paragraph at lines 27--28
+ \OT1/cmr/m/n/9 ma- 
+ []
+
+
+Overfull \hbox (15.93045pt too wide) in paragraph at lines 27--28
+ \OT1/cmr/m/n/9 tion 
+ []
+
+
+Overfull \hbox (14.90268pt too wide) in paragraph at lines 27--28
+ \OT1/cmr/m/n/9 and 
+ []
+
+
+Overfull \hbox (22.09708pt too wide) in paragraph at lines 27--28
+ \OT1/cmr/m/n/9 Com- 
+ []
+
+
+Overfull \hbox (15.67351pt too wide) in paragraph at lines 27--28
+ \OT1/cmr/m/n/9 mu- 
+ []
+
+
+Overfull \hbox (10.7916pt too wide) in paragraph at lines 27--28
+ \OT1/cmr/m/n/9 ni- 
+ []
+
+
+Overfull \hbox (11.81937pt too wide) in paragraph at lines 27--28
+ \OT1/cmr/m/n/9 ca- 
+ []
+
+
+Overfull \hbox (15.93045pt too wide) in paragraph at lines 27--28
+ \OT1/cmr/m/n/9 tion 
+ []
+
+
+Overfull \hbox (22.10054pt too wide) in paragraph at lines 27--28
+ \OT1/cmr/m/n/9 Tech- 
+ []
+
+
+Overfull \hbox (20.04153pt too wide) in paragraph at lines 27--28
+ \OT1/cmr/m/n/9 nolo- 
+ []
+
+
+Overfull \hbox (14.95753pt too wide) in paragraph at lines 27--28
+ \OT1/cmr/m/n/9 gies 
+ []
+
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.29     &
+          %
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.34     \studyDepartment
+                         %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (26.3144pt too wide) in paragraph at lines 44--44
+ []\OT1/cmr/m/n/9 Sousse 
+ []
+
+
+Overfull \hbox (17.72765pt too wide) in paragraph at lines 44--44
+ \OT1/cmr/m/n/9 Uni- 
+ []
+
+
+Overfull \hbox (15.44086pt too wide) in paragraph at lines 44--44
+ \OT1/cmr/m/n/9 ver- 
+ []
+
+
+Overfull \hbox (14.44019pt too wide) in paragraph at lines 44--44
+ \OT1/cmr/m/n/9 sity 
+ []
+
+! Undefined control sequence.
+<recently read> \ENIS 
+                      
+l.45     \ENIS
+              {}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Misplaced alignment tab character &.
+l.46     &
+          %
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+l.48     &
+          %
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Undefined control sequence.
+l.53     \arrayrulecolor
+                        {reportType}%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.54     \specialrule
+                     {0.75pt}{2pt}{0pt}%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.55     \specialrule
+                     {2.00pt}{1pt}{0pt}%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{center} on input line 13 ended by \end{tabularx}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56   \end{tabularx}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (149.58926pt too wide) in paragraph at lines 53--58
+ []\OT1/cmr/m/n/9 reportType0.75pt2pt0pt2.00pt1pt0pt 
+ []
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <46> not available
+(Font)              size <24.88> substituted on input line 66.
+
+! Undefined control sequence.
+l.68   \reportTitle
+                   {}\\\textsc{Report}\\%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.68   \reportTitle{}\\
+                       \textsc{Report}\\%
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/sc' in size <46> not available
+(Font)              size <24.88> substituted on input line 68.
+
+
+Overfull \hbox (91.50261pt too wide) in paragraph at lines 68--68
+ []\OT1/cmr/m/sc/24.88 Report 
+ []
+
+
+Overfull \hbox (46.84671pt too wide) in paragraph at lines 72--72
+ []\OT1/cmr/bx/it/10 presented 
+ []
+
+
+Overfull \hbox (10.7249pt too wide) in paragraph at lines 72--72
+ \OT1/cmr/bx/it/10 at 
+ []
+
+! Undefined control sequence.
+l.75 \ENIS
+          {}\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.75 \ENIS{}\\
+              
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+Missing character: There is no ( in font nullfont!
+! Undefined control sequence.
+l.76 (\studyDepartment
+                      )\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ) in font nullfont!
+
+Overfull \hbox (10.05547pt too wide) in paragraph at lines 79--79
+ []\OT1/cmr/bx/it/10 in 
+ []
+
+
+Overfull \hbox (15.0721pt too wide) in paragraph at lines 79--79
+ \OT1/cmr/bx/it/10 or- 
+ []
+
+
+Overfull \hbox (16.24985pt too wide) in paragraph at lines 79--79
+ \OT1/cmr/bx/it/10 der 
+ []
+
+
+Overfull \hbox (9.761pt too wide) in paragraph at lines 79--79
+ \OT1/cmr/bx/it/10 to 
+ []
+
+
+Overfull \hbox (15.37761pt too wide) in paragraph at lines 79--79
+ \OT1/cmr/bx/it/10 ob- 
+ []
+
+
+Overfull \hbox (19.81647pt too wide) in paragraph at lines 79--79
+ \OT1/cmr/bx/it/10 tain 
+ []
+
+
+Overfull \hbox (15.93317pt too wide) in paragraph at lines 79--79
+ \OT1/cmr/bx/it/10 the 
+ []
+
+Missing character: There is no N in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no E in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no D in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no S in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+
+Overfull \hbox (11.98878pt too wide) in paragraph at lines 86--86
+ []\OT1/cmr/bx/it/10 by 
+ []
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <18> not available
+(Font)              size <17.28> substituted on input line 88.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <18> not available
+(Font)              size <17.28> substituted on input line 89.
+
+! Undefined control sequence.
+<recently read> \reportAuthor 
+                              
+l.89   \textbf{\reportAuthor}
+                             \\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <27> not available
+(Font)              size <24.88> substituted on input line 94.
+
+! Undefined control sequence.
+l.95   \HRule
+             %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.97   \reportSubject
+                     {}\\%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97   \reportSubject{}\\
+                         %
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.99   \HRule
+             %
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no D in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+! Undefined control sequence.
+l.103 Defended on~\dateSoutenance
+                                 ~in front of the committee composed of\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no f in font nullfont!
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 106.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 106.
+! Undefined control sequence.
+l.107   \juryPresident
+                      {} & \juryPresidentDesc{}\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.107   \juryPresident{} & \juryPresidentDesc
+                                             {}\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \juryMemberOne 
+                               
+l.108   \juryMemberOne
+                      {} & \juryMemberOneDesc{}\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.108   \juryMemberOne{} & \juryMemberOneDesc
+                                             {}\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \juryMemberTwo 
+                               
+l.109   \juryMemberTwo
+                      {} & \juryMemberTwoDesc{}\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.109   \juryMemberTwo{} & \juryMemberTwoDesc
+                                             {}\\
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: \begin{document} ended by \end{titlepage}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.115 \end{titlepage}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+! Emergency stop.
+<*> ./002-top_matter.tex
+                        
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 51 strings out of 478659
+ 857 string characters out of 2846394
+ 298559 words of memory out of 3000000
+ 18252 multiletter control sequences out of 15000+600000
+ 405602 words of font info for 34 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 19i,8n,12p,153b,180s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!
