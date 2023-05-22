@@ -1,17 +1,26 @@
 \acswitchoff 
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1}{\ignorespaces Host organization TECHLEAD\relax }}{4}{figure.caption.5}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Salesforce features, Source: \blx@tocontentsinit {0}\cite {1}\relax }}{5}{figure.caption.6}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Chatter extension in Salesforce, Source: \blx@tocontentsinit {0}\cite {2}\relax }}{5}{figure.caption.7}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Usecases for Salesforce, Source: \blx@tocontentsinit {0}\cite {2}\relax }}{6}{figure.caption.8}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Salesforce's architecture, Source: \blx@tocontentsinit {0}\cite {3}\relax }}{7}{figure.caption.9}%
-\contentsline {figure}{\numberline {6}{\ignorespaces MVC Architecture\relax }}{9}{figure.caption.10}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Gantt diagram\relax }}{12}{figure.caption.12}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Host organization TECHLEAD\relax }}{4}{figure.caption.9}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Salesforce features, Source: \blx@tocontentsinit {0}\cite {1}\relax }}{5}{figure.caption.10}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Chatter extension in Salesforce, Source: \blx@tocontentsinit {0}\cite {2}\relax }}{5}{figure.caption.11}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Usecases for Salesforce, Source: \blx@tocontentsinit {0}\cite {2}\relax }}{6}{figure.caption.12}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Salesforce's architecture, Source: \blx@tocontentsinit {0}\cite {3}\relax }}{7}{figure.caption.13}%
+\contentsline {figure}{\numberline {6}{\ignorespaces MVC Architecture, Source: \blx@tocontentsinit {0}\cite {6}\relax }}{9}{figure.caption.14}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Gantt diagram\relax }}{12}{figure.caption.16}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8}{\ignorespaces Global use case diagram\relax }}{18}{figure.caption.13}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Consult user list use case diagram\relax }}{19}{figure.caption.14}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Login use case diagram\relax }}{21}{figure.caption.16}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Company Search use case diagram\relax }}{23}{figure.caption.18}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Follow Company use case diagram\relax }}{25}{figure.caption.20}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Purchase Documents use case diagram\relax }}{27}{figure.caption.22}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Global use case diagram\relax }}{18}{figure.caption.17}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Consult user list use case diagram\relax }}{19}{figure.caption.18}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Consult synthetic dashboard use case diagram\relax }}{23}{figure.caption.21}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Access Chatbot use case diagram\relax }}{26}{figure.caption.24}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {12}{\ignorespaces Understanding MVC Design Pattern, Source: \blx@tocontentsinit {0}\cite {7}\relax }}{30}{figure.caption.26}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Class diagram representing the "Model" component\relax }}{32}{figure.caption.27}%
+\contentsline {figure}{\numberline {14}{\ignorespaces General dependency diagram\relax }}{39}{figure.caption.28}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Detailed dependency diagram in case of functionality print the list of users\relax }}{40}{figure.caption.29}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Detailed sequence diagram of the "register" use case\relax }}{41}{figure.caption.30}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Detailed sequence diagram of the "login" use case\relax }}{42}{figure.caption.31}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Detailed sequence diagram of the "login with social media" use case\relax }}{43}{figure.caption.32}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Detailed sequence diagram of the "search company" use case\relax }}{44}{figure.caption.33}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Detailed sequence diagram of the "follow company" use case\relax }}{45}{figure.caption.34}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Detailed sequence diagram of the "purchase documents" use case\relax }}{46}{figure.caption.35}%

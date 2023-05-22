@@ -13,7 +13,7 @@ The community manager is the first main user of our application who should be ab
 \begin{itemize}
 \item[•] Choose the community that he has the right to access and manage.
 \item[•] Consult users of a specific community inside a well-organized table with pagination options.
-\item[•] Filter said users by name, user-name, Salesforce account name, status( active or not active ), and Salesforce profile.
+\item[•] Filter said users by name, user-name, Salesforce account name, status (active or not active), and Salesforce profile.
 \item[•] Consult and update the details of each user.
 \item[•] Activate users within a specific community.
 \item[•] Deactivate users within a specific community.
@@ -98,12 +98,12 @@ The application must be efficient, i.e. the system must react within a period th
 not exceed 5 seconds, whatever the action of the application.
 
 \item Availability:\\
-The application will be available on 24/24, and 7/7 except during the maintenance period.
+The application will be available on 24/24 and 7/7 except during maintenance.
 
 \end{itemize}
 \section{Use case diagrams}
 In this section, we will highlight the system's functionalities to be
-from the functional needs mentioned above based on the UML(Unified Modeling Language) diagrams which group together all the use cases of the system.
+from the functional needs mentioned above based on the UML(Unified Modeling Language) diagrams which group together all the system's use cases.
 \subsection{Global use case diagram}
 The following figure illustrates the global use case diagram of our application
 \begin{figure}[H]%
@@ -124,6 +124,7 @@ The following figure shows the Consult user list use case diagram.
 The following table details the tasks to be performed by the user to manage the user list.
 
 \begin{table}[H]
+\footnotesize% or \small or \scriptsize
 \begin{tabular}{|ll|}
 \hline
 \multicolumn{2}{|c|}{\textbf{Summary}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         \\ \hline
@@ -133,123 +134,119 @@ The following table details the tasks to be performed by the user to manage the 
 \multicolumn{2}{|c|}{\textbf{Description of sequences}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        \\ \hline
 \multicolumn{1}{|l|}{Pre-condition}              & \begin{tabular}[c]{@{}l@{}}- User should be authenticated to Salesforce\\ - User should be the owner of at least one community\end{tabular}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 \\ \hline
 \multicolumn{1}{|l|}{Post-condition}             & - Community members are well organized                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      \\ \hline
-\multicolumn{1}{|l|}{Normal scenario}            & \begin{tabular}[c]{@{}l@{}}1. User accesses the user list interface\\ 2. User selects one or many community members\\ 3. User clicks the "activate/deactivate" button for selected members\\ 4. System prompts the success of the operation\\ 5. User clicks the "Send welcome email" button for the selected members\\ 6. System prompts the success of the operation\\ 7. User clicks the "Send reset password" button for the selected members\\ 8. System prompts the success of the operation\\ 9. User clicks the "show details" button for one member\\ 10. The member information interface pops up \\ 11. User updates the selected member information and complies\\ 12. System prompts the success of the operation\end{tabular} \\ \hline
+\multicolumn{1}{|l|}{Normal scenario}            & \begin{tabular}[c]{@{}l@{}}1. User accesses the user list interface\\ 2. User selects one or many community members\\ 3. User clicks the "activate/deactivate" button for selected members\\ 4. The system prompts the success of the operation\\ 5. The user clicks the "Send welcome email" button\\ for the selected members\\ 6. The system prompts the success of the operation\\ 7. The user clicks the "Send reset password" button\\ for the selected members\\ 8. The system prompts the success of the operation\\ 9. The user clicks the "show details" button for one member\\ 10. The member information interface pops up \\ 11. User updates the selected member information and complies\\ 12. System prompts the success of the operation\end{tabular} \\ \hline
 \multicolumn{1}{|l|}{Alternative scenario}       & \begin{tabular}[c]{@{}l@{}}1. License limit exceeded when activating members: The system\\ sends an error message\\ 2. Sending a welcome email to a deactivated member: The system\\ sends an error message\\ 3. Changing member username to an existing one: The system\\ sends an error message\end{tabular}                                                                                                                                                                                                                                                                                                                                                                                                                              \\ \hline
 \multicolumn{1}{|l|}{Non-functional constraints} & \begin{tabular}[c]{@{}l@{}}1. The interface must be ergonomic\\ 2. Error messages should be understandable and clear\end{tabular}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           \\ \hline
 \end{tabular}
+\captionsetup{skip=5pt} % Adjust the skip value as per your needs
 \caption{Consult user list use case}
 
 \end{table}
 \pagebreak
-\subsubsection{Login use case refinement}
-In our application, a customer must log in before benefiting from the service of purchasing a document through our application and tracking a specific company through notifications.\\
-The following figure shows the Login use case diagram.
-\begin{figure}[H]%
-    \center   
-    \includegraphics[scale=0.5]{UC_l.png}
-    \caption{Login use case diagram}
-\end{figure}
-\pagebreak
-The following table details the tasks to be performed by the customer to log in
-to our app.
-\begin{table}[H]
-\begin{tabular}{|ll|}
-\hline
-\multicolumn{2}{|c|}{\textbf{Summary}}                                                                                                                                                                                                                                                                                                                               \\ \hline
-\multicolumn{1}{|l|}{Title}                               & Login                                                                                                                                                                                                                                                                                                    \\ \hline
-\multicolumn{1}{|l|}{Objectif}                            & \begin{tabular}[c]{@{}l@{}}Allowing the user to login to be able to purchase documents\\  and follow companies through the application\end{tabular}                                                                                                                                                      \\ \hline
-\multicolumn{1}{|l|}{Actors}                              & Customer                                                                                                                                                                                                                                                                                                 \\ \hline
-\multicolumn{2}{|c|}{\textbf{Description of sequences}}                                                                                                                                                                                                                                                                                                              \\ \hline
-\multicolumn{1}{|l|}{Pre-condition}                       & \begin{tabular}[c]{@{}l@{}}User should start the application and go to the log in \\ interface.\end{tabular}                                                                                                                                                                                             \\ \hline
-\multicolumn{1}{|l|}{Post-condition}                      & \begin{tabular}[c]{@{}l@{}}The user is logged in and his session is cached in\\ the application.\end{tabular}                                                                                                                                                                                            \\ \hline
-\multicolumn{1}{|l|}{\textbf{Normal scenario}}            & \begin{tabular}[c]{@{}l@{}}1. The user accesses the login interface. \\ 2. The user completes the form and complies or \\ he clicks on one of the social media buttons\\ and completes the external login process. \\ 3. Login is completed.\\ 4. The login token is cached within the application.\end{tabular} \\ \hline
-\multicolumn{1}{|l|}{\textbf{Alternative scenario}}       & \begin{tabular}[c]{@{}l@{}}1. Empty fields: The system sends an error message:\\ You must complete all fields \\ 2. The email or password entered is not valid:\\ The system displays an error message describing \\ the validation conditions for these fields.\end{tabular}                \\ \hline
-\multicolumn{1}{|l|}{\textbf{Non functional constraints}} & \begin{tabular}[c]{@{}l@{}}1. The interface must be ergonomic. \\ 2. Error messages should be understandable and clear.\end{tabular}                                                                                                                                                                     \\ \hline
-\end{tabular}
-\caption{Login use case}
-\end{table}
-\pagebreak
-\subsubsection{Company search use case refinement}
-The following figure illustrates the use case diagram "Company Search"
-\begin{figure}[H]%
-    \center   
-    \includegraphics[scale=0.5]{UC_s.png}
-    \caption{Company Search use case diagram}
-\end{figure}
-\pagebreak
-The following table details the tasks to be performed by the customer to search for companies within our app.
-\begin{table}[H]
-\begin{tabular}{|ll|}
-\hline
-\multicolumn{2}{|c|}{\textbf{Summary}}                                                                                                                                                                                                                                                                                                                                                                                                                                     \\ \hline
-\multicolumn{1}{|l|}{Title}                               & Company Search                                                                                                                                                                                                                                                                                                                                                                                                 \\ \hline
-\multicolumn{1}{|l|}{Objectif}                            & \begin{tabular}[c]{@{}l@{}}Allowing the user to search for specific \\ companies through the application\end{tabular}                                                                                                                                                                                                                                                                                          \\ \hline
-\multicolumn{1}{|l|}{Actors}                              & Customer                                                                                                                                                                                                                                                                                                                                                                                                       \\ \hline
-\multicolumn{2}{|c|}{\textbf{Description of sequences}}                                                                                                                                                                                                                                                                                                                                                                                                                    \\ \hline
-\multicolumn{1}{|l|}{Pre-condition}                       & \begin{tabular}[c]{@{}l@{}}User should start the application and go to the \\ search company interface.\end{tabular}                                                                                                                                                                                                                                                                                           \\ \hline
-\multicolumn{1}{|l|}{Post-condition}                      & \begin{tabular}[c]{@{}l@{}}The user chooses a company from the list of results \\ and consults details about it.\end{tabular}                                                                                                                                                                                                                                                                                  \\ \hline
-\multicolumn{1}{|l|}{\textbf{Normal scenario}}            & \begin{tabular}[c]{@{}l@{}}1. The user accesses the company search interface. \\ 2. The user types the company name \\ or the first letters of it. \\ 3. The user may choose \\ a specific state, a legal form, or \\  a branch to filter the results.\\ 4. The user may also type zip code \\ or capital as a filter. \\ 5. The user consults details about companies\\ from the list of results.\end{tabular} \\ \hline
-\multicolumn{1}{|l|}{\textbf{Alternative scenario}}       & \begin{tabular}[c]{@{}l@{}}1. No results: The system sends a message:\\ No results were found with the given parameters \\ 2. No internet: The system sends an error message:\\ No internet connection found.\end{tabular}                                                                                                                                                                                     \\ \hline
-\multicolumn{1}{|l|}{\textbf{Non functional constraints}} & \begin{tabular}[c]{@{}l@{}}1. The interface must be ergonomic. \\ 2. Error messages should be understandable and clear.\end{tabular}                                                                                                                                                                                                                                                                           \\ \hline
-\end{tabular}
-\caption{Company Search}
-\end{table}
-\pagebreak
-\subsubsection{Follow Company use case refinement}
-The following figure illustrates the use case diagram "Follow Company"
-\begin{figure}[H]%
-    \center   
-    \includegraphics[scale=0.5]{UC_f.png}
-    \caption{Follow Company use case diagram}
-\end{figure}
-\pagebreak
-The following table details the tasks to be performed by the customer to follow a company within our app.
-\begin{table}[H]
-\begin{tabular}{|ll|}
-\hline
-\multicolumn{2}{|c|}{\textbf{Summary}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                  \\ \hline
-\multicolumn{1}{|l|}{Title}                               & Follow Company                                                                                                                                                                                                                                                                                                                                                                                                                              \\ \hline
-\multicolumn{1}{|l|}{Objectif}                            & \begin{tabular}[c]{@{}l@{}}Allowing the user to follow specific \\ companies to receive notifications\\ about its events through the application\end{tabular}                                                                                                                                                                                                                                                                               \\ \hline
-\multicolumn{1}{|l|}{Actors}                              & Customer                                                                                                                                                                                                                                                                                                                                                                                                                                    \\ \hline
-\multicolumn{2}{|c|}{\textbf{Description of sequences}}                                                                                                                                                                                                                                                                                                                                                                                                                                                 \\ \hline
-\multicolumn{1}{|l|}{Pre-condition}                       & \begin{tabular}[c]{@{}l@{}}User should start the application, be logged in, \\ search for a specific company and \\ access the consult company details interface.\end{tabular}                                                                                                                                                                                                                                             \\ \hline
-\multicolumn{1}{|l|}{Post-condition}                      & The tracked company is added to the user's follow list.                                                                                                                                                                                                                                                                                                                                                                                     \\ \hline
-\multicolumn{1}{|l|}{\textbf{Normal scenario}}            & \begin{tabular}[c]{@{}l@{}}1. The user accesses the consult company interface. \\ 2. The user taps the follow button. \\ 3. The user may choose \\ to unfollow the company or enable event notifications.\\ \\ 4. Upon activating notifications, \\ the user will receive notifications through the application\\ when a notice is published about said company. \\ 5. The user can tap the notification to access the notice.\end{tabular} \\ \hline
-\multicolumn{1}{|l|}{\textbf{Alternative scenario}}       & \begin{tabular}[c]{@{}l@{}}1. Not logged in: The system sends an error message:\\ You must be logged in to follow a company.\end{tabular}                                                                                                                                                                                                                                                                                                   \\ \hline
-\multicolumn{1}{|l|}{\textbf{Non functional constraints}} & 1. The notification must be as close to real-time as possible                                                                                                                                                                                                                                                                                                                                                                                  \\ \hline
-\end{tabular}
-\caption{Follow Company use case}
-\end{table}
-\pagebreak
-\subsubsection{Purchase Documents use case refinement}
-The following figure illustrates the use case diagram "Purchase Documents"
-\begin{figure}[H]%
-    \center   
-    \includegraphics[scale=0.5]{UC_p.png}
-    \caption{Purchase Documents use case diagram}
-\end{figure}
-\pagebreak
-The following table details the tasks to be performed by the customer to purchase documents within our app.
+\subsubsection{Add members use case refinement}
+In our application, the community manager and the system administrator can add one or multiple members at once to their respective communities.\\
+
+The following table details the tasks to be performed by the user to add members to his community.
 
 \begin{table}[H]
 \begin{tabular}{|ll|}
 \hline
-\multicolumn{2}{|c|}{\textbf{Summary}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 \\ \hline
-\multicolumn{1}{|l|}{Title}                               & Purchase Documents                                                                                                                                                                                                                                                                                                                                                                                                                                                         \\ \hline
-\multicolumn{1}{|l|}{Objectif}                            & \begin{tabular}[c]{@{}l@{}}Allowing the user to purchase official documents \\ about the consulted company, if they are available.\end{tabular}                                                                                                                                                                                                                                                                                                                            \\ \hline
-\multicolumn{1}{|l|}{Actors}                              & Customer                                                                                                                                                                                                                                                                                                                                                                                                                                                                   \\ \hline
-\multicolumn{2}{|c|}{\textbf{Description of sequences}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                \\ \hline
-\multicolumn{1}{|l|}{Pre-condition}                       & \begin{tabular}[c]{@{}l@{}}User should start the application, be logged in, \\ search for a specific company, \\ access the consult company details interface \\ and scroll to the documents section.\end{tabular}                                                     \\ \hline
-\multicolumn{1}{|l|}{Post-condition}                      & \begin{tabular}[c]{@{}l@{}}The purchased documents are added to their user's purchased documents\\ interface where he can download them on demand.\end{tabular}                                                                                                                                                                                                                                                                                                            \\ \hline
-\multicolumn{1}{|l|}{\textbf{Normal scenario}}            & \begin{tabular}[c]{@{}l@{}}1. The user accesses the consult company interface. \\ 2. The user taps the wanted documents. \\ 3. The documents will be added to the shopping cart \\ 4. Upon checkout, the user will be redirected to the payment interface\\ 5. The user fills in the contact information form\\ 6. The user chooses the payment method\\ 7. The user enters credit card details\\ 8. The user confirms the payment\\ 9. Purchase is completed\end{tabular} \\ \hline
-\multicolumn{1}{|l|}{\textbf{Alternative scenario}}       & \begin{tabular}[c]{@{}l@{}}1. Not logged in: The system sends an error message:\\ You must be logged in to purchase documents.\end{tabular}                                                                                                                                                                                                                                                                                                                                \\ \hline
-\multicolumn{1}{|l|}{\textbf{Non functional constraints}} & \begin{tabular}[c]{@{}l@{}}1. The interface must be ergonomic. \\ 2. Error messages should be understandable and clear.\\ 3. The payment must be as secure as possible\end{tabular}                                                                                                                                                                                                                                                                                        \\ \hline
+\multicolumn{2}{|c|}{\textbf{Summary}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      \\ \hline
+\multicolumn{1}{|l|}{Title}                      & Add members                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              \\ \hline
+\multicolumn{1}{|l|}{Objectif}                   & \begin{tabular}[c]{@{}l@{}}Allowing the community manager or the system administrator to \\ add one or multiple members at once to his community\end{tabular}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            \\ \hline
+\multicolumn{1}{|l|}{Actors}                     & Community manager, System administrator                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  \\ \hline
+\multicolumn{2}{|c|}{\textbf{Description of sequences}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     \\ \hline
+\multicolumn{1}{|l|}{Pre-condition}              & \begin{tabular}[c]{@{}l@{}}- User should be authenticated to Salesforce\\ - User should be the owner of at least one community\\ - User should have a Salesforce role\end{tabular}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       \\ \hline
+\multicolumn{1}{|l|}{Post-condition}             & - New member(s) are added to the owner's community                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       \\ \hline
+\multicolumn{1}{|l|}{Normal scenario}            & \begin{tabular}[c]{@{}l@{}}1. User accesses the add members interface\\ 2. The user fills the displayed form with information about the new member\\ 3. The user clicks the " add another member" button\\ 4. A new empty form, identical to the previous one, is displayed\\ 5. The user fills the new form with information about the next new member\\ 6. The user clicks the "clone member" button\\ 7. A new form containing the same values as the previous form is displayed\\ 8. The user clicks the "delete form" button\\ 9. The selected form is deleted from the screen\\ 10. The user clicks the "submit" button \\ 11. System prompts the success of the operations\end{tabular} \\ \hline
+\multicolumn{1}{|l|}{Alternative scenario}       & \begin{tabular}[c]{@{}l@{}}1. Empty fields: The system sends an error message:\\ You must complete all the required fields\\ 2. The email entered is not valid: The system sends an error message\\ describing the validation conditions for this field\\ 3. Duplicate Salesforce user-name: The system sends an error message\end{tabular}                                                                                                                                                                                                                                                                                                                              \\ \hline
+\multicolumn{1}{|l|}{Non-functional constraints} & \begin{tabular}[c]{@{}l@{}}1. The interface must be ergonomic\\ 2. Error messages should be understandable and clear\end{tabular}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        \\ \hline
 \end{tabular}
-\caption{Purchase Documents use case}
+\captionsetup{skip=5pt} % Adjust the skip value as per your needs
+\caption{Add members use case}
+
 \end{table}
+\subsubsection{Consult synthetic dashboard use case refinement}
+In our application, the community manager and the system administrator can access a dashboard containing features that helps them to manage their respective communities.\\
+The following figure shows the Consult synthetic use case diagram.
+\begin{figure}[H]%
+    \center   
+    \includegraphics[scale=0.5]{Consult synthetic dashboard UC.jpg}
+    \caption{Consult synthetic dashboard use case diagram}
+\end{figure}
+
+The following table details the tasks to be performed by the customer to consult the synthetic dashboard
+in our application.
+\begin{table}[H]
+\begin{tabular}{|ll|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Summary}}                                                                                                                                                                                       \\ \hline
+\multicolumn{1}{|l|}{Title}                      & Consult synthetic dashboard                                                                                                                                               \\ \hline
+\multicolumn{1}{|l|}{Objectif}                   & \begin{tabular}[c]{@{}l@{}}Allowing the system administrator\\ to access extra features that helps him to manage his communities\end{tabular} \\ \hline
+\multicolumn{1}{|l|}{Actors}                     & System administrator                                                                                                                                   \\ \hline
+\multicolumn{2}{|c|}{\textbf{Description of sequences}}                                                                                                                                                                      \\ \hline
+\multicolumn{1}{|l|}{Pre-condition}              & \begin{tabular}[c]{@{}l@{}}- User should be authenticated to Salesforce\\ - User should be the owner of at least one community\end{tabular}                               \\ \hline
+\multicolumn{1}{|l|}{Post-condition}             & \begin{tabular}[c]{@{}l@{}}- System administrator is well informed\\ about his respective community.\end{tabular}                                \\ \hline
+\multicolumn{1}{|l|}{Normal scenario}            & \begin{tabular}[c]{@{}l@{}}1. User accesses the dashboard interface\\ 2. User selects the wanted feature \\ 3. The selected feature interface pops up.\end{tabular}       \\ \hline
+\multicolumn{1}{|l|}{Alternative scenario}       &                                                                                                                                                                           \\ \hline
+\multicolumn{1}{|l|}{Non-functional constraints} & 1. The interface must be ergonomic                                                                                                                                        \\ \hline
+\end{tabular}
+\caption{Consult synthetic dashboard use case}
+\end{table}
+
+
+The following table details the tasks to be performed by the customer to consult the failed login attempts
+in our application.
+\begin{table}[H]
+\begin{tabular}{|ll|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Summary}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           \\ \hline
+\multicolumn{1}{|l|}{Title}                      & Consult failed login attempts                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 \\ \hline
+\multicolumn{1}{|l|}{Objectif}                   & \begin{tabular}[c]{@{}l@{}}Allowing  the system administrator\\ to access failed login attempts and inform concerned users about them\end{tabular}                                                                                                                                                                                                                                                                                                                                                            \\ \hline
+\multicolumn{1}{|l|}{Actors}                     & System administrator                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          \\ \hline
+\multicolumn{2}{|c|}{\textbf{Description of sequences}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          \\ \hline
+\multicolumn{1}{|l|}{Pre-condition}              & \begin{tabular}[c]{@{}l@{}}- User should be authenticated to Salesforce\\ - User should be the owner of at least one community\end{tabular}                                                                                                                                                                                                                                                                                                                                                                   \\ \hline
+\multicolumn{1}{|l|}{Post-condition}             & - Users are well-informed about their account security status.                                                                                                                                                                                                                                                                                                                                                                                                                                                \\ \hline
+\multicolumn{1}{|l|}{Normal scenario}            & \begin{tabular}[c]{@{}l@{}}1. User accesses the failed login attempts interface\\ 2. The user clicks the "show details" button for a specific login event\\ 3. The "show details" interface for the selected login event pops up\\ 4. The user clicks the "send security warning email" button for\\ the specific login event\\ 5. The system prompts the success of the operation\\ 6. The concerned user receives the warning email, containing details\\ about the failed login attempt, in his email\end{tabular} \\ \hline
+\multicolumn{1}{|l|}{Alternative scenario}       & \begin{tabular}[c]{@{}l@{}}1. Server error when sending the warning email: The system\\ sends an error message received from the server\end{tabular}                                                                                                                                                                                                                                                                                                                                                          \\ \hline
+\multicolumn{1}{|l|}{Non-functional constraints} & \begin{tabular}[c]{@{}l@{}}1. The interface must be ergonomic\\ 2. Error messages should be understandable and clear\end{tabular}                                                                                                                                                                                                                                                                                                                                                                             \\ \hline
+\end{tabular}
+\caption{Consult failed login attempts use case}
+\end{table}
+
+
+
+\subsubsection{Access Chatbot use case refinement}
+The following figure illustrates the use case diagram "Access Chatbot"
+
+\begin{figure}[H]%
+    \center   
+    \includegraphics[scale=0.5]{Access Chatbot.jpg}
+    \caption{Access Chatbot use case diagram}
+\end{figure}
+
+The following table details the tasks to be performed by the customer to Access the Chatbot within our app.
+\begin{table}[H]
+\begin{tabular}{|ll|}
+\hline
+\multicolumn{2}{|c|}{\textbf{Summary}}                                                                                                                                                                                                                                                                                                                              \\ \hline
+\multicolumn{1}{|l|}{Title}                      & Access Chatbot                                                                                                                                                                                                                                                                                                   \\ \hline
+\multicolumn{1}{|l|}{Objectif}                   & \begin{tabular}[c]{@{}l@{}}Trigger a Chatbot that responds to user requests \\ while providing informations about the current community\end{tabular}                                                                                                                                                             \\ \hline
+\multicolumn{1}{|l|}{Actors}                     & System administrator, Chatbot                                                                                                                                                                                                                                                                                    \\ \hline
+\multicolumn{2}{|c|}{\textbf{Description of sequences}}                                                                                                                                                                                                                                                                                                             \\ \hline
+\multicolumn{1}{|l|}{Pre-condition}              & \begin{tabular}[c]{@{}l@{}}- User should be authenticated to Salesforce\\ - User should be the owner of at least one community\end{tabular}                                                                                                                                                                      \\ \hline
+\multicolumn{1}{|l|}{Post-condition}             & \begin{tabular}[c]{@{}l@{}} - User question is answered\\ and the response is displayed on the screen. \end{tabular}                                                                                                                                                                                                                                             \\ \hline
+\multicolumn{1}{|l|}{Normal scenario}            & \begin{tabular}[c]{@{}l@{}}1. User accesses the Chatbot interface\\ 2. User types a question or selects a predefined question.\\ 3. The chatbot is launched upon receipt of a request\\ 4. The chatbot analyzes the request\\5. The chatbot prepares the response\\ 6. The chatbot sends the response\end{tabular} \\ \hline
+\multicolumn{1}{|l|}{Alternative scenario}       & 1. An error message is displayed if the question\\ is not recognized by the system.                                                                                                                                                                                                                                 \\ \hline
+\multicolumn{1}{|l|}{Non-functional constraints} & \begin{tabular}[c]{@{}l@{}}1. The interface must be ergonomic\\ 2. Error messages should be understandable and clear\\ 3. The ChatBot must always be available.\end{tabular}                                                                                                                                     \\ \hline
+\end{tabular}
+
+\caption{Access Chatbot use case}
+\end{table}
+
 \pagebreak
 \section*{Conclusion}
 In this chapter, we have described the specification phases of the
 needs of our developed application to identify the different actors
 as well as the features and services that our application must provide.\\
-We have detailed these features with use case diagrams. The next chapter will be devoted to the design phase.
+We have detailed these features with use case diagrams. The next chapter will be devoted to the conception phase.

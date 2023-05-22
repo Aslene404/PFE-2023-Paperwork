@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.7)  14 MAY 2023 22:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.7)  22 MAY 2023 14:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1303,9 +1303,9 @@ Package: blx-case-expl3 2023/03/05 v3.19 expl3 case changing code for biblatex
 )
 \@quotelevel=\count488
 \@quotereset=\count489
- (main.aux (002-top_matter.aux) (001-abstract.aux)
-(004-chapter0-introduction.aux) (004-chapter1.aux) (004-chapter2.aux)
-(007-references.aux))
+ (main.aux (002-top_matter.aux) (003-thanks.aux)
+(001-abstract.aux) (004-chapter0-introduction.aux) (004-chapter1.aux)
+(004-chapter2.aux) (004-chapter3.aux) (007-references.aux))
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 70.
@@ -1481,7 +1481,7 @@ Package biblatex Info: Reference segment=0 on input line 70.
 
 pdfTeX warning: pdflatex (file ./page de garde.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<page de garde.pdf, id=106, 597.55246pt x 845.07724pt>
+<page de garde.pdf, id=150, 597.55246pt x 845.07724pt>
 File: page de garde.pdf Graphic file (type pdf)
 <use page de garde.pdf>
 Package pdftex.def Info: page de garde.pdf  used on input line 15.
@@ -1502,7 +1502,7 @@ ersion <1.7>, but at most version <1.5> allowed
 
 pdfTeX warning: pdflatex (file ./page de garde.pdf): PDF inclusion: found PDF v
 ersion <1.7>, but at most version <1.5> allowed
-<page de garde.pdf, id=109, page=1, 597.55246pt x 845.07724pt>
+<page de garde.pdf, id=153, page=1, 597.55246pt x 845.07724pt>
 File: page de garde.pdf Graphic file (type pdf)
 <use page de garde.pdf, page 1>
 Package pdftex.def Info: page de garde.pdf , page1 used on input line 15.
@@ -1527,47 +1527,86 @@ Package pdftex.def Info: page de garde.pdf , page1 used on input line 15.
 
 
  <./page de garde.pdf>])
-\openout2 = `001-abstract.aux'.
+\openout2 = `003-thanks.aux'.
 
- (001-abstract.tex [2
+ (003-thanks.tex
+LaTeX Font Info:    Calculating math sizes for size <26> on input line 5.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <26> on input line 5.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <18.19992> on input line 5.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <13> on input line 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 5--5
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--11
+
+ []
+
+[2
+
 
 
 
 
 {C:/Users/Aslene/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Asl
-ene/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]) [3
+ene/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+
+ []
+
+[3
+
+])
+\openout2 = `001-abstract.aux'.
+
+ (001-abstract.tex
+Underfull \hbox (badness 10000) in paragraph at lines 9--9
+
+ []
+
+[4
+
+
+
+
+
 
 ]
-LaTeX Font Info:    Calculating math sizes for size <26> on input line 139.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <26> on input line 139.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <18.19992> on input line 139.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <13> on input line 139.
+Underfull \hbox (badness 10000) in paragraph at lines 41--41
 
-Underfull \hbox (badness 10000) in paragraph at lines 139--139
+ []
+
+) [5
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
 
  []
 
 (main.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 5.
+(Font)              <12> on input line 7.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 5.
+(Font)              <8> on input line 7.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 5.
-)
+(Font)              <6> on input line 7.
+ [6
+
+
+
+
+])
 \tf@toc=\write6
 \openout6 = `main.toc'.
 
- [4
-
-
-
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 139--139
+ [7]
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
 
  []
 
@@ -1575,11 +1614,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--139
 \tf@lof=\write7
 \openout7 = `main.lof'.
 
- [5
+ [8
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 139--139
+Underfull \hbox (badness 10000) in paragraph at lines 141--141
 
  []
 
@@ -1587,7 +1626,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--139
 \tf@lot=\write8
 \openout8 = `main.lot'.
 
- [6
+ [9
 
 
 ]
@@ -1634,12 +1673,12 @@ Underfull \hbox (badness 4328) in paragraph at lines 30--31
 -op-ers can pro-vide as-sis-tance and
  []
 
-<./images//techlead.png, id=271, 1319.93124pt x 745.78625pt>
+<./images//techlead.png, id=357, 1319.93124pt x 745.78625pt>
 File: ./images//techlead.png Graphic file (type png)
 <use ./images//techlead.png>
 Package pdftex.def Info: ./images//techlead.png  used on input line 35.
 (pdftex.def)             Requested size: 263.98157pt x 149.1546pt.
-<./images//context.png, id=273, 599.99156pt x 252.19218pt>
+<./images//context.png, id=359, 599.99156pt x 252.19218pt>
 File: ./images//context.png Graphic file (type png)
 <use ./images//context.png>
 Package pdftex.def Info: ./images//context.png  used on input line 52.
@@ -1650,18 +1689,18 @@ Overfull \hbox (24.74979pt too wide) in paragraph at lines 52--53
  []
 
 [4 <./images//techlead.png>]
-<./images//chatter.jpg, id=280, 290.0436pt x 278.9622pt>
+<./images//chatter.jpg, id=367, 290.0436pt x 278.9622pt>
 File: ./images//chatter.jpg Graphic file (type jpg)
 <use ./images//chatter.jpg>
 Package pdftex.def Info: ./images//chatter.jpg  used on input line 59.
 (pdftex.def)             Requested size: 232.03519pt x 223.17006pt.
  [5 <./images//context.png> <./images//chatter.jpg>]
-<./images//usecases.png, id=286, 402.00188pt x 334.24875pt>
+<./images//usecases.png, id=373, 402.00188pt x 334.24875pt>
 File: ./images//usecases.png Graphic file (type png)
 <use ./images//usecases.png>
 Package pdftex.def Info: ./images//usecases.png  used on input line 66.
 (pdftex.def)             Requested size: 321.60193pt x 267.39935pt.
-<./images//architecture.png, id=287, 615.99261pt x 316.72691pt>
+<./images//architecture.png, id=374, 615.99261pt x 316.72691pt>
 File: ./images//architecture.png Graphic file (type png)
 <use ./images//architecture.png>
 Package pdftex.def Info: ./images//architecture.png  used on input line 75.
@@ -1688,7 +1727,7 @@ Underfull \hbox (badness 1571) in paragraph at lines 129--130
 chi-tec-ture: a soft-ware
  []
 
-<./images//mvc.jpg, id=313, 252.19218pt x 266.49562pt>
+<./images//mvc.jpg, id=399, 252.19218pt x 266.49562pt>
 File: ./images//mvc.jpg Graphic file (type jpg)
 <use ./images//mvc.jpg>
 Package pdftex.def Info: ./images//mvc.jpg  used on input line 133.
@@ -1699,7 +1738,7 @@ Overfull \hbox (20.69965pt too wide) in paragraph at lines 148--155
  []
 
 [9 <./images//mvc.jpg>] [10]
-<./images//gantt.png, id=327, 438.8897pt x 292.84406pt>
+<./images//gantt.png, id=414, 438.8897pt x 292.84406pt>
 File: ./images//gantt.png Graphic file (type png)
 <use ./images//gantt.png>
 Package pdftex.def Info: ./images//gantt.png  used on input line 180.
@@ -1732,7 +1771,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--10
 
 
 ] [14] [15] [16]
-<./PFE Conception/StarUML Projects/jpg//Global UC.jpg, id=354, 1154.3125pt x 86
+<./PFE Conception/StarUML Projects/jpg//Global UC.jpg, id=441, 1154.3125pt x 86
 1.2175pt>
 File: ./PFE Conception/StarUML Projects/jpg//Global UC.jpg Graphic file (type j
 pg)
@@ -1746,7 +1785,7 @@ Overfull \hbox (64.19173pt too wide) in paragraph at lines 111--112
  []
 
 [17]
-<./PFE Conception/StarUML Projects/jpg//Consult users list UC.jpg, id=359, 1081
+<./PFE Conception/StarUML Projects/jpg//Consult users list UC.jpg, id=446, 1081
 .03876pt x 788.9475pt>
 File: ./PFE Conception/StarUML Projects/jpg//Consult users list UC.jpg Graphic 
 file (type jpg)
@@ -1760,90 +1799,213 @@ Overfull \hbox (85.27394pt too wide) in paragraph at lines 121--122
  []
 
 [18 <./PFE Conception/StarUML Projects/jpg//Global UC.jpg>]
-Overfull \hbox (52.67436pt too wide) in paragraph at lines 127--140
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 128.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 128.
+ [19 <./PFE Conception/StarUML Projects/jpg//Consult users list UC.jpg>] [20]
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
+
+ []
+
+
+Overfull \hbox (62.98279pt too wide) in paragraph at lines 152--166
 [][] 
  []
 
-[19 <./PFE Conception/StarUML Projects/jpg//Consult users list UC.jpg>]
-Overfull \vbox (22.04338pt too high) has occurred while \output is active []
+[21]
+<./PFE Conception/StarUML Projects/jpg//Consult synthetic dashboard UC.jpg, id=
+463, 1045.9075pt x 692.5875pt>
+File: ./PFE Conception/StarUML Projects/jpg//Consult synthetic dashboard UC.jpg
+ Graphic file (type jpg)
+<use ./PFE Conception/StarUML Projects/jpg//Consult synthetic dashboard UC.jpg>
 
+Package pdftex.def Info: ./PFE Conception/StarUML Projects/jpg//Consult synthet
+ic dashboard UC.jpg  used on input line 174.
+(pdftex.def)             Requested size: 522.95247pt x 346.2929pt.
 
-[20]
-<./Diagrams//UC_l.png, id=373, 845.1575pt x 403.5075pt>
-File: ./Diagrams//UC_l.png Graphic file (type png)
-<use ./Diagrams//UC_l.png>
-Package pdftex.def Info: ./Diagrams//UC_l.png  used on input line 149.
-(pdftex.def)             Requested size: 422.57771pt x 201.75325pt.
- [21 <./Diagrams//UC_l.png>] [22]
-<./Diagrams//UC_s.png, id=383, 885.3075pt x 403.5075pt>
-File: ./Diagrams//UC_s.png Graphic file (type png)
-<use ./Diagrams//UC_s.png>
-Package pdftex.def Info: ./Diagrams//UC_s.png  used on input line 176.
-(pdftex.def)             Requested size: 442.65266pt x 201.75325pt.
- [23 <./Diagrams//UC_s.png>] [24]
-<./Diagrams//UC_f.png, id=393, 885.3075pt x 513.92pt>
-File: ./Diagrams//UC_f.png Graphic file (type png)
-<use ./Diagrams//UC_f.png>
-Package pdftex.def Info: ./Diagrams//UC_f.png  used on input line 202.
-(pdftex.def)             Requested size: 442.65266pt x 256.95937pt.
- [25 <./Diagrams//UC_f.png>] [26]
-<./Diagrams//UC_p.png, id=404, 885.3075pt x 554.07pt>
-File: ./Diagrams//UC_p.png Graphic file (type png)
-<use ./Diagrams//UC_p.png>
-Package pdftex.def Info: ./Diagrams//UC_p.png  used on input line 228.
-(pdftex.def)             Requested size: 442.65266pt x 277.03432pt.
- [27 <./Diagrams//UC_p.png>]
-Overfull \hbox (55.5433pt too wide) in paragraph at lines 235--248
+Overfull \hbox (67.70836pt too wide) in paragraph at lines 174--175
+ [] 
+ []
+
+[22]
+Overfull \hbox (14.70651pt too wide) in paragraph at lines 181--194
 [][] 
  []
 
-[28]) [29]
+[23 <./PFE Conception/StarUML Projects/jpg//Consult synthetic dashboard UC.jpg>
+]
+Overfull \hbox (35.4187pt too wide) in paragraph at lines 201--214
+[][] 
+ []
+
+[24]
+<./PFE Conception/StarUML Projects/jpg//Access Chatbot.jpg, id=477, 896.34875pt
+ x 548.0475pt>
+File: ./PFE Conception/StarUML Projects/jpg//Access Chatbot.jpg Graphic file (t
+ype jpg)
+<use ./PFE Conception/StarUML Projects/jpg//Access Chatbot.jpg>
+Package pdftex.def Info: ./PFE Conception/StarUML Projects/jpg//Access Chatbot.
+jpg  used on input line 224.
+(pdftex.def)             Requested size: 448.17328pt x 274.02307pt.
+ [25]
+Overfull \hbox (6.00365pt too wide) in paragraph at lines 230--243
+[][] 
+ []
+
+[26 <./PFE Conception/StarUML Projects/jpg//Access Chatbot.jpg>] [27]) [28]
+\openout2 = `004-chapter3.aux'.
+
+
+(004-chapter3.tex
+Chapter 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+
+ []
+
+[29
+
+
+
+
+
+]
+<./images//mvc2.jpg, id=499, 819.06pt x 457.71pt>
+File: ./images//mvc2.jpg Graphic file (type jpg)
+<use ./images//mvc2.jpg>
+Package pdftex.def Info: ./images//mvc2.jpg  used on input line 26.
+(pdftex.def)             Requested size: 409.52899pt x 228.85445pt.
+<./PFE Conception/StarUML Projects/jpg//ClassDiagram.jpg, id=500, 1769.61125pt 
+x 1938.24126pt>
+File: ./PFE Conception/StarUML Projects/jpg//ClassDiagram.jpg Graphic file (typ
+e jpg)
+<use ./PFE Conception/StarUML Projects/jpg//ClassDiagram.jpg>
+Package pdftex.def Info: ./PFE Conception/StarUML Projects/jpg//ClassDiagram.jp
+g  used on input line 36.
+(pdftex.def)             Requested size: 548.57382pt x 600.84859pt.
+
+Overfull \hbox (93.32971pt too wide) in paragraph at lines 36--37
+ [] 
+ []
+
+[30 <./images//mvc2.jpg>] [31] [32 <./PFE Conception/StarUML Projects/jpg//Clas
+sDiagram.jpg>] [33] [34] [35] [36] [37]
+<./images//ca_dep.png, id=534, 467.49657pt x 166.37157pt>
+File: ./images//ca_dep.png Graphic file (type png)
+<use ./images//ca_dep.png>
+Package pdftex.def Info: ./images//ca_dep.png  used on input line 162.
+(pdftex.def)             Requested size: 233.74771pt x 83.18556pt.
+ [38]
+<./images//ca_dep_detail.png, id=539, 813.79031pt x 467.49657pt>
+File: ./images//ca_dep_detail.png Graphic file (type png)
+<use ./images//ca_dep_detail.png>
+Package pdftex.def Info: ./images//ca_dep_detail.png  used on input line 187.
+(pdftex.def)             Requested size: 406.89417pt x 233.74771pt.
+ [39 <./images//ca_dep.png>]
+<./Diagrams//seq_r.png, id=544, 861.2175pt x 724.7075pt>
+File: ./Diagrams//seq_r.png Graphic file (type png)
+<use ./Diagrams//seq_r.png>
+Package pdftex.def Info: ./Diagrams//seq_r.png  used on input line 209.
+(pdftex.def)             Requested size: 430.6077pt x 362.35286pt.
+
+[40 <./images//ca_dep_detail.png>]
+<./Diagrams//seq_l.png, id=550, 889.3225pt x 766.865pt>
+File: ./Diagrams//seq_l.png Graphic file (type png)
+<use ./Diagrams//seq_l.png>
+Package pdftex.def Info: ./Diagrams//seq_l.png  used on input line 222.
+(pdftex.def)             Requested size: 444.66016pt x 383.43156pt.
+<./Diagrams//seq_ls.png, id=551, 1312.905pt x 981.6675pt>
+File: ./Diagrams//seq_ls.png Graphic file (type png)
+<use ./Diagrams//seq_ls.png>
+Package pdftex.def Info: ./Diagrams//seq_ls.png  used on input line 227.
+(pdftex.def)             Requested size: 525.15271pt x 392.66003pt.
+
+Overfull \hbox (69.9086pt too wide) in paragraph at lines 227--228
+ [] 
+ []
+
+[41 <./Diagrams//seq_r.png>] [42 <./Diagrams//seq_l.png>]
+<./Diagrams//seq_s.png, id=562, 981.6675pt x 981.6675pt>
+File: ./Diagrams//seq_s.png Graphic file (type png)
+<use ./Diagrams//seq_s.png>
+Package pdftex.def Info: ./Diagrams//seq_s.png  used on input line 236.
+(pdftex.def)             Requested size: 490.83255pt x 490.83255pt.
+
+Overfull \hbox (35.58844pt too wide) in paragraph at lines 236--237
+ [] 
+ []
+
+[43 <./Diagrams//seq_ls.png>]
+<./Diagrams//seq_f.png, id=568, 981.6675pt x 981.6675pt>
+File: ./Diagrams//seq_f.png Graphic file (type png)
+<use ./Diagrams//seq_f.png>
+Package pdftex.def Info: ./Diagrams//seq_f.png  used on input line 246.
+(pdftex.def)             Requested size: 490.83255pt x 490.83255pt.
+
+Overfull \hbox (35.58844pt too wide) in paragraph at lines 246--247
+ [] 
+ []
+
+[44 <./Diagrams//seq_s.png>]
+<./Diagrams//seq_p.png, id=574, 1302.8675pt x 1222.5675pt>
+File: ./Diagrams//seq_p.png Graphic file (type png)
+<use ./Diagrams//seq_p.png>
+Package pdftex.def Info: ./Diagrams//seq_p.png  used on input line 255.
+(pdftex.def)             Requested size: 521.13777pt x 489.01834pt.
+
+Overfull \hbox (65.89366pt too wide) in paragraph at lines 255--256
+ [] 
+ []
+
+[45 <./Diagrams//seq_f.png>]) [46 <./Diagrams//seq_p.png>] [47]
 \openout2 = `007-references.aux'.
 
- (007-references.tex)
-Underfull \hbox (badness 10000) in paragraph at lines 141--141
+
+(007-references.tex)
+Underfull \hbox (badness 10000) in paragraph at lines 143--143
 
  []
 
-[30
+[48
 
 
 
 
 
-\@writefile{toc}{\contentsline {chapter}{Webography}{30}{section*.24}\protected
+\@writefile{toc}{\contentsline {chapter}{Webography}{48}{section*.36}\protected
 @file@percent }
-\@writefile{toc}{\contentsline {chapter}{Bibliography}{30}{section*.25}\protect
+\@writefile{toc}{\contentsline {chapter}{Bibliography}{48}{section*.37}\protect
 ed@file@percent }
 
 
 
 
-] (main.aux (002-top_matter.aux) (001-abstract.aux)
+] (main.aux (002-top_matter.aux) (003-thanks.aux) (001-abstract.aux)
 (004-chapter0-introduction.aux) (004-chapter1.aux) (004-chapter2.aux)
-(007-references.aux))
+(004-chapter3.aux) (007-references.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 0B5B293239BA950B33F2D7946D458F44;4385.
+(rerunfilecheck)             Checksum: 55E94AC49351E87E2DFCD3FBFDBE0E49;7251.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 42072 strings out of 476315
- 874412 string characters out of 5786725
- 1863068 words of memory out of 5000000
- 61733 multiletter control sequences out of 15000+600000
- 535654 words of font info for 73 fonts, out of 8000000 for 9000
+ 42266 strings out of 476315
+ 879528 string characters out of 5786725
+ 1864068 words of memory out of 5000000
+ 61858 multiletter control sequences out of 15000+600000
+ 539433 words of font info for 78 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,17n,91p,1879b,3146s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,17n,91p,1879b,3179s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/Aslene/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.p
 fb><C:/Users/Aslene/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a
 .pfb><C:/Users/Aslene/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8
 a.pfb><C:/Users/Aslene/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr
 i8a.pfb>
-Output written on main.pdf (36 pages, 1146583 bytes).
+Output written on main.pdf (57 pages, 1946398 bytes).
 PDF statistics:
- 473 PDF objects out of 1000 (max. 8388607)
- 105 named destinations out of 1000 (max. 500000)
- 298 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 662 PDF objects out of 1000 (max. 8388607)
+ 150 named destinations out of 1000 (max. 500000)
+ 426 words of extra memory for PDF output out of 10000 (max. 10000000)
 

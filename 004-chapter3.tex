@@ -1,185 +1,155 @@
-\chapter{Design}
+\chapter{Conception}
 \section*{Introduction}
 After identifying the functional and non-functional needs and the main functionalities of our application. We begin this part
 of the conceptual study by describing the general architecture of our system and
-its detailed internal modeling through class and sequence diagrams.
+it's detailed internal modeling through class and sequence diagrams.
 \section{Global Architecture}
 In this section, we will give an overview of the definition of the
 the architectural pattern was chosen to model our application and we will
 detail the projection of this pattern on our application.
-\subsection{Definition of the Clean Architecture pattern}
-Clean architecture is a software design philosophy proposed by Robert C. Martin, aka Uncle Bob. This architecture is based on:
+
+\subsection{Definition of the Model-View-Controller design pattern}
+Our chosen architecture of work for this project will be the MVC  architecture since it is recommended by the Salesforce developer’s community.\\
+The model-view-controller (MVC) design pattern specifies that an application consists of a data model, presentation information, and control information.\cite{5} \\
+The pattern requires that each of these be separated into different objects:
 \begin{itemize}
-\item The SOLID principles from which derive the principle of inversion of control and the
-principle of dependency injection (a framework external to the application
-creates the components of the application and injects the dependencies between these
-components
-\item The principle of separation of "business rules" (independent of the applications) and the "application rules".
-\item The principle of independence from the core of the application of necessary technologies
- for its operation.
+\item \textbf{The model} (for example, the data information) contains only pure application data; it contains no logic describing how to present the data to a user. \cite{5}
+\item \textbf{The view} (for example, the presentation information) presents the model's data to the user. The view knows how to access the model's data, but it does not know what this data means or what the user can do to manipulate it. \cite{5}
+\item \textbf{The controller} (for example, the control information) exists between the view and the model. It listens to events triggered by the view (or another external source) and executes the appropriate reaction to these events. In most cases, the reaction is to call a method on the model. Since the view and the model are connected through a notification mechanism, the result of this action is then automatically reflected in the view.\cite{5}
 \end{itemize}
 Thanks to these principles, the components of the application become easy to
-manage, test, modify and reuse.\\
-The clean architecture pattern is divided into 4 layers (upcoming figure) whose meaning
-dependency is incoming:
-\begin{itemize}
-\item \textbf{Entities}\\
-Entities that represent application domain objects with
-their methods (Business Rules).
-\item \textbf{Use Cases}\\
-This layer represents the logic of the application, i.e. the rules
-specific to an application (Application Rules).
-\item \textbf{Inerfaces / Adapters}\\
-This layer represents the interface between systems external to the application (framework, databases, UI...) and the core of the application (entities +
-use case). This layer allows formatting, structuring, and adaptation of incoming and outgoing data.
-\item \textbf{External technologies}\\
-This layer represents the layer external to the application grouping the
-technologies necessary for its operation (APIs, frameworks, Databases, UI, network, drivers, devices, etc.).
-\end{itemize}
+manage, test, modify, and reuse.\\
+The following figure explains furthermore the role and the idea behind each component of the MVC pattern:
+
 \begin{figure}[H]%
     \center   
-    \includegraphics[scale=0.5]{clean.jpg}
-    \caption{Clean Architecture}
+    \includegraphics[scale=0.5]{mvc2.jpg}
+    \caption{Understanding MVC Design Pattern, Source: \cite{7}}
 \end{figure}
-\subsection{Application of the "Clean Architecture" pattern}
+\subsection{Application of the "MVC" pattern}
 We explain in this paragraph the details of the projection of the pattern
-Clean Architecture on our app.\\
+MVC on our app.\\
 The following figure represents the class diagram which illustrates the binding
-between entities (classes). Indeed, this diagram translates the content of the \textbf{Entities} layer.
+between entities (classes). Indeed, this diagram translates the content of the \textbf{Model} component, and it's based on the schema that is already established within the Salesforce infrastructure.
 \begin{figure}[H]%
     \center   
-    \includegraphics[scale=0.45]{class.png}
-    \caption{Class diagram representing the "Entities" layer}
+    \includegraphics[scale=0.31]{ClassDiagram.jpg}
+    \caption{Class diagram representing the "Model" component}
 \end{figure}
 \newpage
-Description of classes representing our entities:
+Description of classes representing our Model:
 \begin{itemize}
-\item \textbf{Customer:}\\
-This class represents our application's customers who may log in, log out, and edit their account information. This class's attributes are:
+\item \textbf{User:}\\
+This class represents our application's Salesforce user who is the main focus of the administrator and the community manager when working within our app. This class's most important attributes in our application are:
 \begin{itemize}
-\item[•] \_ id: the identifier of the customer
-\item[•] first\_ name: the first name of the customer
-\item[•] last\_ name: the last name of the customer
-\item[•] email: the email of the customer
-\item[•] salutation: the salutation of the customer ( Herr, Frau)
-\item[•] title: the title of the customer ( Prof., Dr.)
-\item[•] phone: the phone number of the customer
-\item[•] street: the street part of the customer's address
-\item[•] house\_ number: the house number part of the customer's address
-\item[•] zip\_ code: the zip code part of the customer's address
-\item[•] city: the city part of the customer's address
-\item[•] password: the password of the customer
-\item[•] company: the company of the customer
-\item[•] ustid: the value-added tax identification number (VAT ID) of the customer's company if he has one
-\item[•] agb: boolean variable presenting if the customer has accepted the agreements of the platform
-\item[•] is\_ from\_ social\_ media: boolean variable presenting if the customer's account was created using a social media account
-\item[•] source: the social media of the customer account (Facebook, Google, LinkedIn, Xing, empty value)
+\item[•] Active: determines the status of the user (active or not active)
+\item[•] Address: the full address of the user
+\item[•] Alias: the alias of the user, usually composed of the first letter of his first name and his last name concatenated together
+\item[•] Contact: a lookup field that connects the user to its corresponding Salesforce contact which is necessary to have to allow the user to access a community
+\item[•] Email: the email of the user
+\item[•] Email Encoding: the encoding of the user's email (for example UTF-8), useful for sending appropriate emails to the user
+%\item[•] First Name: the first name of the user
+\item[•] Is Portal Enabled: determines if the user can access a community or not
+%\item[•] Last Name: the last name of the user
+\item[•] Language: the preferred interface language of the user that will control the user interface of the accessed community
+\item[•] Locale: the geolocation locale id of the user ( example Arabic(Tunisia) )
+\item[•] Name: the full name of the user which is composed automatically by the Salesforce system by concatenating his first name and his last name
+\item[•] Profile: a lookup field that connects the user to its corresponding Salesforce profile which controls the level of access provided to the user ( for example System Administrator which gives full access to all Salesforce objects and configurations )
+\item[•] Role: the relative company role of the user ( for example CEO ), this field is required to be able to add a user to a community through our app
+\item[•] Time Zone: the timezone of the user ( for example GMT+02:00 )
+\item[•] Username: the unique Salesforce user name if the user usually identical to the user's email
 \end{itemize}
-\item \textbf{Company:}\\
-This class represents the companies in our application that can be followed by the customer. This class's attributes are:
+\item \textbf{Contact:}\\
+This class represents the Salesforce contacts connected to the community user in our application. This class's most important attributes in our application are:
 \begin{itemize}
-\item[•] \_ id: the identifier of the company
-\item[•] name: the latest name of the company
-\item[•] register\_ type\_ 1: the first part of the company's German type
-\item[•] register\_ type\_ 2: the second part of the company's German type
-\item[•] register\_ number: the German commercial register number of the company
-\item[•] federal\_ state: the German federal state name of the company
-\item[•] company\_ number: the number of the company in our database
-\item[•] current\_ status: the current status of the company ( active, shutdown)
-\item[•] prevoius\_ names: list of the company's previous names
-\item[•] legal\_ form: the legal form of the company (GmbH, Limited \& Co. KG, etc)
-\item[•] capital: the capital of the company in euros
-\item[•] registerd\_ address: the latest address of the company
-\item[•] objective: the objective of the company
-\item[•] phone\_ number: the latest phone number of the company
-\item[•] mobile\_ number: the latest mobile phone number of the company
-\item[•] email: the latest email of the company
-\item[•] website: the latest website of the company
-\item[•] insolvencies: list of the company's insolvencies notices
-\item[•] notices: list of the company's change notices
-\item[•] officers: list of the company's office workers and individuals
-\item[•] bilans: list of the company's balance sheets
-\item[•] documents: list of the company's available purchasable documents
-\item[•] statistics: visualization data of the company's business performance 
-
+\item[•] Account Name: a lookup field that represents the Salesforce unique account connected to the contact
+\item[•] Contact Owner: a lookup field that represents the user owning the Salesforce contact
+\item[•] Created By:: a lookup field that represents the user who created the Salesforce contact
+\item[•] Email: email of the contact
+\item[•] Last Modified By: a lookup field that represents the last user to modify details of the contact
+\item[•] Name: the full name of the contact
 
 \end{itemize}
-\item \textbf{Insolvency}\\
-This class presents the insolvencies notices in our application. This class's attributes are:
+\item \textbf{Account}\\
+This class represents the Salesforce account connected to the community user in our application. This class's most important attributes in our application are:
 \begin{itemize}
-\item[•] \_ id: the identifier of the company's insolvencies
-\item[•] content: the list of notices from the company
-\item[•] insolvency\_ check: variable representing if the company has a bad record in insolvencies ( positive, negative)
+\item[•] Account Name: Salesforce account name
+\item[•] Account Owner: a lookup field that represents the user owning the Salesforce account 
+\item[•] Created By: a lookup field that represents the user who created the Salesforce account 
+\item[•] Customer Portal Account: determines if the account can be connected to the community user
+\item[•] Last Modified By: a lookup field that represents the last user to modify details of the account
+\item[•] Parent Account: a self-lookup field that represents the parent account of this account through the Salesforce hierarchy
 \end{itemize}
-\item \textbf{Notice}\\
-This class presents the change notices in our application. This class's attributes are:
+\item \textbf{Profile}\\
+This class represents the Salesforce profile connected to the community user in our application. This class's most important attributes in our application are:
 \begin{itemize}
-\item[•] \_ id: the identifier of the notice
-\item[•] id\_ notice: the identifier of the notice regarding each company
-\item[•] land: the location of the release of the notice
-\item[•] company\_ number: the number of the company owning the notice
-\item[•] publication\_ date: the date of publication of the notice
-\item[•] legend: the label of the notice
-\item[•] notice\_ type: the type of the notice
-\item[•] apply\_ date: the date of application of the notice
-\item[•] notice\_ text: the content of the notice
-\item[•] source\_ url: the source of the notice
-\item[•] notice\_ content\_ type: the type content of the notice
-\end{itemize}
-\item \textbf{Officer}\\
-This class presents the officer(office worker/individuals) in our application. This class's attributes are:
-\begin{itemize}
-\item[•] \_ id: the identifier of the officer
-
-\item[•] name: the full name of the officer
-\item[•] firstname: the first name of the officer
-\item[•] lastname: the last name of the officer
-\item[•] position: the position of the officer
+\item[•] Created By: a lookup field that represents the user who created the Salesforce profile 
+\item[•] Full Name: the full name of the profile that represents its usage context 
+\item[•] Last Modified By: a lookup field that represents the last user to modify details of the profile
+\item[•] Name: the name of the Salesforce profile that represents the main way of identifying the profile through other objects
+\item[•] User License: a lookup field that represents the Salesforce purchased user license connected to the profile 
 
 \end{itemize}
-\item \textbf{Bilan}\\
-This class presents the balance sheets in our application. This class's attributes are:
+\item \textbf{User License}\\
+This class represents the Salesforce purchased user license connected to the community user in our application. This class's most important attributes in our application are:
 \begin{itemize}
-\item[•] productID: the identifier of the sheet
+\item[•] Name: the name of the Salesforce user license that represents the main way of identifying the user license through other objects
+\item[•] Total Licenses: represents the total number of purchased user licenses dedicated to community users 
+\item[•] Used Licenses: represents the number of used user licenses which determines if the administrator or the community manager can add more users to his community depending on how many purchased user licenses are left
 
-\item[•] name: the name of the sheet
-\item[•] category: the category of the sheet
-\item[•] price: the price of the sheet
-\item[•] productQuantity: the available quantity of the sheet
-\item[•] totalPrice: the full price of the sheet
-\item[•] companyName: the name of the company owning the sheet
-\item[•] initPrice: the initial price of the sheet
-\item[•] discount: boolean variable presenting if the sheet is on discount
 \end{itemize}
-\item \textbf{Statistic}\\
-This class presents the statistics data in our application. This class's attributes are:
+\item \textbf{Network}\\
+This class represents the community created by the administrator or the community manager in our application. This class's most important attributes in our application are:
 \begin{itemize}
-\item[•] labels: the values on the X axis on the graph ( usually year values) 
-
-\item[•] data: the values on the Y axis on the graph ( usually turnover values) 
-\item[•] profitData: the data for profit values on the graph
+\item[•] Created By: a lookup field that represents the user who created the Salesforce community 
+\item[•] Created Date: represents the date and time of the creation of the Salesforce community
+\item[•] Description: a brief description of the community set by its creator to summarize its purpose
+\item[•] From Email Address: represents the email that will be displayed when a user receives an email through our application
+\item[•] From Email Name: represents the name that will be displayed when a user receives an email through our application
+\item[•] Last Modified By: a lookup field that represents the last user to modify details or the content of the community
+\item[•] Last Modified Date: represents the date and time of the last activity within the community
+\item[•] Lost Password Template: represents the email template that will be used when sending a "Reset password" email through our application
+\item[•] Name: the name of the Salesforce community that represents the main way of identifying the community through other objects
+\item[•] Profile: a lookup field that represents the Salesforce profiles that are allowed to access the community
+\item[•] Welcome Email Template: represents the email template that will be used when sending a "Welcome to community" email through our application
+\end{itemize}
+\item \textbf{Network Member}\\
+This class represents the users that are considered members of a Salesforce community in our application. This class's most important attributes in our application are:
+\begin{itemize}
+\item[•] Created By: a lookup field that represents the user who added the new member to the Salesforce community 
+\item[•] Member: a lookup field that represents the user representing the member of the community, this field is used to access all the details about the user within the Network Member object
+\item[•] Network: a lookup field that represents the community that the member is considered a part of, this field is used to access all the details about the community within the Network Member object
 
 
 \end{itemize}
 
-\item \textbf{Documents}\\
-This class presents documents in our application, the customer can purchase these documents and download them as pdf files once purchased. This class's attributes are:
+\item \textbf{Login History}\\
+This class represents the login event details that are recorded by Salesforce regarding users' activity and will be used to track the activities of the members of any Salesforce community in our application. This class's most important attributes in our application are:
 \begin{itemize}
-\item[•] productID: the identifier of the document
+\item[•] Browser: represents the commercial name and the version of the web browser that the login vent happened from ( for example Chrome 112 ) 
+\item[•] CountryIso: the first two letters of the country where the login event happened from ( for example TN stands for Tunisia )
+\item[•] LoginGeoId: a lookup field that represents the geographic location connected to the login event
+\item[•] LoginTime: the exact date and time of the login event
+\item[•] NetworkId:  a lookup field that represents the community that the user wanted to access when the login event was recorded
+\item[•] Platform: represents the commercial name and the version of the platform that the login vent happened from ( for example Windows 10 )
+\item[•] SourceIp: the IP address of the user that tried to access the community 
+\item[•] Status: the state of the login attempt ( for example Invalid Password )
+\item[•] UserId: a lookup field that represents the user concerned with the login event, this field is used to send security warning emails, within our application, to users concerned with a failed login attempt 
 
-\item[•] name: the name of the document
-\item[•] category: the category of the document
-\item[•] price: the price of the document
-\item[•] productQuantity: the available quantity of the document
-\item[•] totalPrice: the full price of the document
-\item[•] companyName: the name of the company owning the document
-\item[•] initPrice: the initial price of the document
-\item[•] discount: boolean variable presenting if the document is on discount
-\item[•] pdf: the link to the pdf file corresponding to the document
+\end{itemize}
+\item \textbf{LoginGeo}\\
+This class represents the login event's geographic location details that are recorded by Salesforce regarding users' activity and will be used to track the geographic location of the activities of the members of any Salesforce community in our application. This class's most important attributes in our application are:
+\begin{itemize}
+\item[•] City: represents the city when the login event happened from ( for example Mahdia )
+\item[•] Country: represents the country when the login event happened from ( for example Tunisia )
+\item[•] CountryIso: the first two letters of the country where the login event happened from ( for example TN stands for Tunisia )
+\item[•] Latitude: represents the geographic latitude of the login event
+\item[•] Longitude: represents the geographic longitude of the login event
+
 \end{itemize}
 \end{itemize}
 %End of page 35 in the Selma report%
-The classes we have defined in the "Entities" layer are related to the german business field, employable in various types of commercial applications, and
+The classes we have defined in the "Entities" layer are related to the German business field, employable in various types of commercial applications, and
 independent of our application. Thus, we made the
 principle of independence between the business rules and the application rules.\\
 For the rest of the layers of the Clean architecture pattern, we will describe
@@ -229,7 +199,7 @@ adapters interface layer or outer layer exists in the app's core.
 In this section, we will describe the internal dynamic of our application using sequence diagrams and activity diagrams
 \subsection{Detailed sequence diagram of the "register" use case}
 The following figure illustrates the detailed sequence diagram of the use case
-"register".
+"Register".
 This use case starts with opening a registration interface
 for the user. Then, the user enters his coordinates and confirms them.
 The system displays an error message if the email already exists otherwise it redirects
@@ -289,7 +259,7 @@ This use case starts with opening an interface containing specific company detai
 This chapter presents one of the most important phases of the process of
 development of a project: design subdivided into the overall design
 and detailed design.\\
-We presented the Clean Architecture architecture pattern and we
+We presented a Clean Architecture architecture pattern and we
 explained its application in our case. We have described the dynamic view
 of the system through a set of sequence diagrams and diagrams
 of activities.\\

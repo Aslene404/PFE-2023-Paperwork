@@ -1,10 +1,11 @@
 \acswitchoff 
 \babel@toc {english}{}\relax 
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {1}{\ignorespaces Study of the existing\relax }}{10}{table.caption.11}%
+\contentsline {table}{\numberline {1}{\ignorespaces Study of the existing\relax }}{10}{table.caption.15}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2}{\ignorespaces Consult user list use case\relax }}{20}{table.caption.15}%
-\contentsline {table}{\numberline {3}{\ignorespaces Login use case\relax }}{22}{table.caption.17}%
-\contentsline {table}{\numberline {4}{\ignorespaces Company Search\relax }}{24}{table.caption.19}%
-\contentsline {table}{\numberline {5}{\ignorespaces Follow Company use case\relax }}{26}{table.caption.21}%
-\contentsline {table}{\numberline {6}{\ignorespaces Purchase Documents use case\relax }}{28}{table.caption.23}%
+\contentsline {table}{\numberline {2}{\ignorespaces Consult user list use case\relax }}{20}{table.caption.19}%
+\contentsline {table}{\numberline {3}{\ignorespaces Add members use case\relax }}{22}{table.caption.20}%
+\contentsline {table}{\numberline {4}{\ignorespaces Consult synthetic dashboard use case\relax }}{24}{table.caption.22}%
+\contentsline {table}{\numberline {5}{\ignorespaces Consult failed login attempts use case\relax }}{25}{table.caption.23}%
+\contentsline {table}{\numberline {6}{\ignorespaces Access Chatbot use case\relax }}{27}{table.caption.25}%
+\addvspace {10\p@ }
