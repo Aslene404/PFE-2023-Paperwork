@@ -14,7 +14,7 @@ The model-view-controller (MVC) design pattern specifies that an application con
 The pattern requires that each of these be separated into different objects:
 \begin{itemize}
 \item \textbf{The model} (for example, the data information) contains only pure application data; it contains no logic describing how to present the data to a user. \cite{5}
-\item \textbf{The view} (for example, the presentation information) presents the model's data to the user. The view knows how to access the model's data, but it does not know what this data means or what the user can do to manipulate it. \cite{5}
+\item \textbf{The view} (for example, the presentation information) presents the model's data to the user. The view knows how to access the model's data but does not know what this data means or what the user can do to manipulate it. \cite{5}
 \item \textbf{The controller} (for example, the control information) exists between the view and the model. It listens to events triggered by the view (or another external source) and executes the appropriate reaction to these events. In most cases, the reaction is to call a method on the model. Since the view and the model are connected through a notification mechanism, the result of this action is then automatically reflected in the view.\cite{5}
 \end{itemize}
 Thanks to these principles, the components of the application become easy to
@@ -33,7 +33,7 @@ The following figure represents the class diagram which illustrates the binding
 between entities (classes). Indeed, this diagram translates the content of the \textbf{Model} component, and it's based on the schema that is already established within the Salesforce infrastructure.
 \begin{figure}[H]%
     \center   
-    \includegraphics[scale=0.31]{ClassDiagram.jpg}
+    \includegraphics[scale=0.4]{ClassDiagram.jpg}
     \caption{Class diagram representing the "Model" component}
 \end{figure}
 \newpage
@@ -42,6 +42,7 @@ Description of classes representing our Model:
 \item \textbf{User:}\\
 This class represents our application's Salesforce user who is the main focus of the administrator and the community manager when working within our app. This class's most important attributes in our application are:
 \begin{itemize}
+\item[•] Id: the unique identification key for the user 
 \item[•] Active: determines the status of the user (active or not active)
 \item[•] Address: the full address of the user
 \item[•] Alias: the alias of the user, usually composed of the first letter of his first name and his last name concatenated together
@@ -62,6 +63,7 @@ This class represents our application's Salesforce user who is the main focus of
 \item \textbf{Contact:}\\
 This class represents the Salesforce contacts connected to the community user in our application. This class's most important attributes in our application are:
 \begin{itemize}
+\item[•] Id: the unique identification key for the contact 
 \item[•] Account Name: a lookup field that represents the Salesforce unique account connected to the contact
 \item[•] Contact Owner: a lookup field that represents the user owning the Salesforce contact
 \item[•] Created By:: a lookup field that represents the user who created the Salesforce contact
@@ -73,6 +75,7 @@ This class represents the Salesforce contacts connected to the community user in
 \item \textbf{Account}\\
 This class represents the Salesforce account connected to the community user in our application. This class's most important attributes in our application are:
 \begin{itemize}
+\item[•] Id: the unique identification key for the account 
 \item[•] Account Name: Salesforce account name
 \item[•] Account Owner: a lookup field that represents the user owning the Salesforce account 
 \item[•] Created By: a lookup field that represents the user who created the Salesforce account 
@@ -83,6 +86,7 @@ This class represents the Salesforce account connected to the community user in 
 \item \textbf{Profile}\\
 This class represents the Salesforce profile connected to the community user in our application. This class's most important attributes in our application are:
 \begin{itemize}
+\item[•] Id: the unique identification key for the profile 
 \item[•] Created By: a lookup field that represents the user who created the Salesforce profile 
 \item[•] Full Name: the full name of the profile that represents its usage context 
 \item[•] Last Modified By: a lookup field that represents the last user to modify details of the profile
@@ -93,6 +97,7 @@ This class represents the Salesforce profile connected to the community user in 
 \item \textbf{User License}\\
 This class represents the Salesforce purchased user license connected to the community user in our application. This class's most important attributes in our application are:
 \begin{itemize}
+\item[•] Id: the unique identification key for the user license 
 \item[•] Name: the name of the Salesforce user license that represents the main way of identifying the user license through other objects
 \item[•] Total Licenses: represents the total number of purchased user licenses dedicated to community users 
 \item[•] Used Licenses: represents the number of used user licenses which determines if the administrator or the community manager can add more users to his community depending on how many purchased user licenses are left
@@ -101,6 +106,7 @@ This class represents the Salesforce purchased user license connected to the com
 \item \textbf{Network}\\
 This class represents the community created by the administrator or the community manager in our application. This class's most important attributes in our application are:
 \begin{itemize}
+\item[•] Id: the unique identification key for the network 
 \item[•] Created By: a lookup field that represents the user who created the Salesforce community 
 \item[•] Created Date: represents the date and time of the creation of the Salesforce community
 \item[•] Description: a brief description of the community set by its creator to summarize its purpose
@@ -116,6 +122,7 @@ This class represents the community created by the administrator or the communit
 \item \textbf{Network Member}\\
 This class represents the users that are considered members of a Salesforce community in our application. This class's most important attributes in our application are:
 \begin{itemize}
+\item[•] Id: the unique identification key for the network member
 \item[•] Created By: a lookup field that represents the user who added the new member to the Salesforce community 
 \item[•] Member: a lookup field that represents the user representing the member of the community, this field is used to access all the details about the user within the Network Member object
 \item[•] Network: a lookup field that represents the community that the member is considered a part of, this field is used to access all the details about the community within the Network Member object
@@ -126,6 +133,7 @@ This class represents the users that are considered members of a Salesforce comm
 \item \textbf{Login History}\\
 This class represents the login event details that are recorded by Salesforce regarding users' activity and will be used to track the activities of the members of any Salesforce community in our application. This class's most important attributes in our application are:
 \begin{itemize}
+\item[•] Id: the unique identification key for the login history
 \item[•] Browser: represents the commercial name and the version of the web browser that the login vent happened from ( for example Chrome 112 ) 
 \item[•] CountryIso: the first two letters of the country where the login event happened from ( for example TN stands for Tunisia )
 \item[•] LoginGeoId: a lookup field that represents the geographic location connected to the login event
@@ -140,11 +148,40 @@ This class represents the login event details that are recorded by Salesforce re
 \item \textbf{LoginGeo}\\
 This class represents the login event's geographic location details that are recorded by Salesforce regarding users' activity and will be used to track the geographic location of the activities of the members of any Salesforce community in our application. This class's most important attributes in our application are:
 \begin{itemize}
-\item[•] City: represents the city when the login event happened from ( for example Mahdia )
-\item[•] Country: represents the country when the login event happened from ( for example Tunisia )
+\item[•] Id: the unique identification key for the loginGeo
+\item[•] City: represents the city when the login event happened (for example Mahdia)
+\item[•] Country: represents the country when the login event happened (for example Tunisia)
 \item[•] CountryIso: the first two letters of the country where the login event happened from ( for example TN stands for Tunisia )
 \item[•] Latitude: represents the geographic latitude of the login event
 \item[•] Longitude: represents the geographic longitude of the login event
+
+\end{itemize}
+\item \textbf{TraceFlag}\\
+This class represents the tracked users and entities regarding monitoring logs for programming errors and bugs committed by developers in the community and will be used to register said users so that their error logs will be monitor by the administrator. This class's most important attributes in our application are:
+\begin{itemize}
+\item[•] Id: the unique identification key for the traceFlag
+\item[•] StartDate: represents the tracking event's starting date for the created trace flag
+\item[•] ExpirationDate: represents the expiration date for the created trace flag
+\item[•] DebugLevelId: a lookup field that connects the traceflag to the Debulevel object in Salesforce , in our application this field will have the default value of the SFDC DevConsole's Id 
+\item[•] LogType: determines the type of logging that will be returned when requesting it, in our application it will take the default value of "USER \_ DEBUG" since we will be tracking users error logs
+\item[•] TracedEntityId: represents the id of the tracked user
+
+\end{itemize}
+\item \textbf{DebugLevel}\\
+This class represents a configuration setting that determines the level of detail for debugging and logging activities in the system. This class's most important attributes in our application are:
+\begin{itemize}
+\item[•] Id: the unique identification key for the debugLevel
+\item[•] MasterLabel: represents debugLevel main label that will be used in our application to retrieve the id of the object and connect it to the TraceFlag object
+
+\end{itemize}
+\item \textbf{ApexLog}\\
+This class represents the detailed logs of the execution of all Apex code ran by the tracked user within the community, and it will be used in our application to provide said logs the administrator. This class's most important attributes in our application are:
+\begin{itemize}
+\item[•] Id: the unique identification key for the apexLog
+\item[•] Body: represents the plain text containing execution traces, debug operations and outputs and errors provided by the called Apex methods
+\item[•] LogUserId: a lookup field representing the user who ran the Apex code which generated the ApexLog
+\item[•] StartDate: represents date and time marking the beginning of the Apex code's execution
+\item[•] Status: represents the title of the main event's log (for example out of bound exception)
 
 \end{itemize}
 \end{itemize}

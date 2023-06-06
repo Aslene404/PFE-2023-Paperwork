@@ -12,15 +12,16 @@
 \contentsline {figure}{\numberline {8}{\ignorespaces Global use case diagram\relax }}{18}{figure.caption.17}%
 \contentsline {figure}{\numberline {9}{\ignorespaces Consult user list use case diagram\relax }}{19}{figure.caption.18}%
 \contentsline {figure}{\numberline {10}{\ignorespaces Consult synthetic dashboard use case diagram\relax }}{23}{figure.caption.21}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Access Chatbot use case diagram\relax }}{26}{figure.caption.24}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Consult failed login attempts use case diagram\relax }}{25}{figure.caption.23}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Access Chatbot use case diagram\relax }}{27}{figure.caption.25}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {12}{\ignorespaces Understanding MVC Design Pattern, Source: \blx@tocontentsinit {0}\cite {7}\relax }}{30}{figure.caption.26}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Class diagram representing the "Model" component\relax }}{32}{figure.caption.27}%
-\contentsline {figure}{\numberline {14}{\ignorespaces General dependency diagram\relax }}{39}{figure.caption.28}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Detailed dependency diagram in case of functionality print the list of users\relax }}{40}{figure.caption.29}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Detailed sequence diagram of the "register" use case\relax }}{41}{figure.caption.30}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Detailed sequence diagram of the "login" use case\relax }}{42}{figure.caption.31}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Detailed sequence diagram of the "login with social media" use case\relax }}{43}{figure.caption.32}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Detailed sequence diagram of the "search company" use case\relax }}{44}{figure.caption.33}%
-\contentsline {figure}{\numberline {20}{\ignorespaces Detailed sequence diagram of the "follow company" use case\relax }}{45}{figure.caption.34}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Detailed sequence diagram of the "purchase documents" use case\relax }}{46}{figure.caption.35}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Understanding MVC Design Pattern, Source: \blx@tocontentsinit {0}\cite {7}\relax }}{31}{figure.caption.27}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Class diagram representing the "Model" component\relax }}{33}{figure.caption.28}%
+\contentsline {figure}{\numberline {15}{\ignorespaces General dependency diagram\relax }}{41}{figure.caption.29}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Detailed dependency diagram in case of functionality print the list of users\relax }}{42}{figure.caption.30}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Detailed sequence diagram of the "register" use case\relax }}{43}{figure.caption.31}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Detailed sequence diagram of the "login" use case\relax }}{44}{figure.caption.32}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Detailed sequence diagram of the "login with social media" use case\relax }}{45}{figure.caption.33}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Detailed sequence diagram of the "search company" use case\relax }}{46}{figure.caption.34}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Detailed sequence diagram of the "follow company" use case\relax }}{47}{figure.caption.35}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Detailed sequence diagram of the "purchase documents" use case\relax }}{48}{figure.caption.36}%

@@ -8,8 +8,8 @@ two types of actors, the main actor, and a secondary actor. Indeed,
 a principal actor obtains an observable result of the system while a
 secondary actor is asked for additional information.\\
 \subsection*{Main actors}
-\textbf{Community Manager}\\
-The community manager is the first main user of our application who should be able to :
+\textbf{Community Manager \& Salesforce Administrator}\\
+Both the community manager and the Salesforce Administrator are the main users of our application and should be able to :
 \begin{itemize}
 \item[•] Choose the community that he has the right to access and manage.
 \item[•] Consult users of a specific community inside a well-organized table with pagination options.
@@ -19,16 +19,6 @@ The community manager is the first main user of our application who should be ab
 \item[•] Deactivate users within a specific community.
 \item[•] Send a "Welcome to community" email to a specific active user.
 \item[•] Send a "Reset password" email to a specific active user.
-\item[•] Add one or multiple users at once to a specific community.
-\end{itemize}
-In case when the community manager has a Salesforce role he will be also able to :
-\begin{itemize}
-\item[•] Add one or multiple users at once to a specific community.
-\end{itemize}
-\textbf{Salesforce Administrator}\\
-The Salesforce administrator is the second main user of our application who should be able to :
-\begin{itemize}
-\item[•] Perform all the actions, mentioned above, that the community manager can.
 \item[•] Consult a bar chart that shows the number of logins of each user within the selected community.
 \item[•] Filter chart results by the period between two specific dates.
 \item[•] Consult details about each user displayed in the chart.
@@ -38,9 +28,14 @@ The Salesforce administrator is the second main user of our application who shou
 \item[•] Consult detailed information about each login attempt.
 \item[•] Send a security warning email to the account owner about the login attempt event.
 \item[•] Access a Chatbot that provides information about the selected community or the Salesforce organization.
-
+\item[•] Access a synthetic dashboard displaying community KPIs (Key Performance Indicators).
 
 \end{itemize}
+In case when the community manager or the Salesforce Administrator has a Salesforce role he will be also able to :
+\begin{itemize}
+\item[•] Add one or multiple users at once to a specific community.
+\end{itemize}
+
 \subsection*{Secondary actors}
 \textbf{Salesforce System}\\
 This actor is the system, previously developed and deployed in a cloud server by the Salesforce organization, interactable through our application, and it's responsible for :
@@ -72,6 +67,12 @@ according to a well-determined date. This allows the administrator to modify the
 
 \item Offer a synthetic dashboard:\\
 Allowing the system administrator / the community manager to visualize the KPIs (Key Performance Indicators) of his organization/community.
+
+\item Manage failed login attempts:\\
+Allowing the system administrator / the community manager to consult details about failed login events as well as send security warning emails to concerned users.
+
+\item Access a smart Chatbot:\\
+Allowing the system administrator / the community manager to request pieces of information from a smart digital assistant.
 
 
 \end{itemize}
@@ -183,17 +184,23 @@ in our application.
 \multicolumn{2}{|c|}{\textbf{Summary}}                                                                                                                                                                                       \\ \hline
 \multicolumn{1}{|l|}{Title}                      & Consult synthetic dashboard                                                                                                                                               \\ \hline
 \multicolumn{1}{|l|}{Objectif}                   & \begin{tabular}[c]{@{}l@{}}Allowing the system administrator\\ to access extra features that helps him to manage his communities\end{tabular} \\ \hline
-\multicolumn{1}{|l|}{Actors}                     & System administrator                                                                                                                                   \\ \hline
+\multicolumn{1}{|l|}{Actors}                     & System administrator, Community Manager                                                                                                                                   \\ \hline
 \multicolumn{2}{|c|}{\textbf{Description of sequences}}                                                                                                                                                                      \\ \hline
 \multicolumn{1}{|l|}{Pre-condition}              & \begin{tabular}[c]{@{}l@{}}- User should be authenticated to Salesforce\\ - User should be the owner of at least one community\end{tabular}                               \\ \hline
-\multicolumn{1}{|l|}{Post-condition}             & \begin{tabular}[c]{@{}l@{}}- System administrator is well informed\\ about his respective community.\end{tabular}                                \\ \hline
-\multicolumn{1}{|l|}{Normal scenario}            & \begin{tabular}[c]{@{}l@{}}1. User accesses the dashboard interface\\ 2. User selects the wanted feature \\ 3. The selected feature interface pops up.\end{tabular}       \\ \hline
+\multicolumn{1}{|l|}{Post-condition}             & \begin{tabular}[c]{@{}l@{}}- System administrator is well informed\\ about his respective community's KPIs.\end{tabular}                                \\ \hline
+\multicolumn{1}{|l|}{Normal scenario}            & \begin{tabular}[c]{@{}l@{}}1. User accesses the dashboard interface\\ 2. Multiple KPI charts pops up \\ 3. User may click a bar from the developers' Error Metrics Chart\\ to access error logs specific to the selected developer \end{tabular}       \\ \hline
 \multicolumn{1}{|l|}{Alternative scenario}       &                                                                                                                                                                           \\ \hline
 \multicolumn{1}{|l|}{Non-functional constraints} & 1. The interface must be ergonomic                                                                                                                                        \\ \hline
 \end{tabular}
 \caption{Consult synthetic dashboard use case}
 \end{table}
-
+\subsubsection{Consult the failed login attempts use case refinement}
+In our application, the community manager and the system administrator can manage failed login attempts committed by their community's members as well as send security warning emails containing details about the event to concerned members.\\
+\begin{figure}[H]%
+    \center   
+    \includegraphics[scale=0.5]{Consult failed login attempts.jpg}
+    \caption{Consult failed login attempts use case diagram}
+\end{figure}
 
 The following table details the tasks to be performed by the customer to consult the failed login attempts
 in our application.
@@ -203,7 +210,7 @@ in our application.
 \multicolumn{2}{|c|}{\textbf{Summary}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           \\ \hline
 \multicolumn{1}{|l|}{Title}                      & Consult failed login attempts                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 \\ \hline
 \multicolumn{1}{|l|}{Objectif}                   & \begin{tabular}[c]{@{}l@{}}Allowing  the system administrator\\ to access failed login attempts and inform concerned users about them\end{tabular}                                                                                                                                                                                                                                                                                                                                                            \\ \hline
-\multicolumn{1}{|l|}{Actors}                     & System administrator                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          \\ \hline
+\multicolumn{1}{|l|}{Actors}                     & System administrator, Community manager                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          \\ \hline
 \multicolumn{2}{|c|}{\textbf{Description of sequences}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          \\ \hline
 \multicolumn{1}{|l|}{Pre-condition}              & \begin{tabular}[c]{@{}l@{}}- User should be authenticated to Salesforce\\ - User should be the owner of at least one community\end{tabular}                                                                                                                                                                                                                                                                                                                                                                   \\ \hline
 \multicolumn{1}{|l|}{Post-condition}             & - Users are well-informed about their account security status.                                                                                                                                                                                                                                                                                                                                                                                                                                                \\ \hline
@@ -232,12 +239,12 @@ The following table details the tasks to be performed by the customer to Access 
 \multicolumn{2}{|c|}{\textbf{Summary}}                                                                                                                                                                                                                                                                                                                              \\ \hline
 \multicolumn{1}{|l|}{Title}                      & Access Chatbot                                                                                                                                                                                                                                                                                                   \\ \hline
 \multicolumn{1}{|l|}{Objectif}                   & \begin{tabular}[c]{@{}l@{}}Trigger a Chatbot that responds to user requests \\ while providing informations about the current community\end{tabular}                                                                                                                                                             \\ \hline
-\multicolumn{1}{|l|}{Actors}                     & System administrator, Chatbot                                                                                                                                                                                                                                                                                    \\ \hline
+\multicolumn{1}{|l|}{Actors}                     & System administrator, Community manager, Chatbot                                                                                                                                                                                                                                                                                    \\ \hline
 \multicolumn{2}{|c|}{\textbf{Description of sequences}}                                                                                                                                                                                                                                                                                                             \\ \hline
 \multicolumn{1}{|l|}{Pre-condition}              & \begin{tabular}[c]{@{}l@{}}- User should be authenticated to Salesforce\\ - User should be the owner of at least one community\end{tabular}                                                                                                                                                                      \\ \hline
 \multicolumn{1}{|l|}{Post-condition}             & \begin{tabular}[c]{@{}l@{}} - User question is answered\\ and the response is displayed on the screen. \end{tabular}                                                                                                                                                                                                                                             \\ \hline
 \multicolumn{1}{|l|}{Normal scenario}            & \begin{tabular}[c]{@{}l@{}}1. User accesses the Chatbot interface\\ 2. User types a question or selects a predefined question.\\ 3. The chatbot is launched upon receipt of a request\\ 4. The chatbot analyzes the request\\5. The chatbot prepares the response\\ 6. The chatbot sends the response\end{tabular} \\ \hline
-\multicolumn{1}{|l|}{Alternative scenario}       & 1. An error message is displayed if the question\\ is not recognized by the system.                                                                                                                                                                                                                                 \\ \hline
+\multicolumn{1}{|l|}{Alternative scenario}       &\begin{tabular}[c]{@{}l@{}} 1. An error message is displayed if the question\\ is not recognized by the system.\end{tabular}                                                                                                                                                                                                                                 \\ \hline
 \multicolumn{1}{|l|}{Non-functional constraints} & \begin{tabular}[c]{@{}l@{}}1. The interface must be ergonomic\\ 2. Error messages should be understandable and clear\\ 3. The ChatBot must always be available.\end{tabular}                                                                                                                                     \\ \hline
 \end{tabular}
 

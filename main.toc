@@ -24,15 +24,16 @@
 \contentsline {subsubsection}{\numberline {2.4.2.1}Consult user list use case refinement}{18}{subsubsection.2.4.2.1}%
 \contentsline {subsubsection}{\numberline {2.4.2.2}Add members use case refinement}{21}{subsubsection.2.4.2.2}%
 \contentsline {subsubsection}{\numberline {2.4.2.3}Consult synthetic dashboard use case refinement}{23}{subsubsection.2.4.2.3}%
-\contentsline {subsubsection}{\numberline {2.4.2.4}Access Chatbot use case refinement}{25}{subsubsection.2.4.2.4}%
-\contentsline {chapter}{\numberline {3}Conception}{29}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Global Architecture}{29}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Definition of the Model-View-Controller design pattern}{29}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Application of the "MVC" pattern}{31}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Dynamic view of the application}{40}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Detailed sequence diagram of the "register" use case}{40}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Detailed sequence diagram of the "login" use case}{41}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Detailed sequence diagram of the "search company" use case}{43}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Detailed sequence diagram of the "follow company" use case}{44}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Detailed sequence diagram of the "purchase documents" use case}{45}{subsection.3.2.5}%
+\contentsline {subsubsection}{\numberline {2.4.2.4}Consult the failed login attempts use case refinement}{24}{subsubsection.2.4.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.2.5}Access Chatbot use case refinement}{26}{subsubsection.2.4.2.5}%
+\contentsline {chapter}{\numberline {3}Conception}{30}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Global Architecture}{30}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Definition of the Model-View-Controller design pattern}{30}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Application of the "MVC" pattern}{32}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Dynamic view of the application}{42}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Detailed sequence diagram of the "register" use case}{43}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Detailed sequence diagram of the "login" use case}{43}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Detailed sequence diagram of the "search company" use case}{45}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Detailed sequence diagram of the "follow company" use case}{46}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Detailed sequence diagram of the "purchase documents" use case}{47}{subsection.3.2.5}%
 \setcounter {tocdepth}{3}
