@@ -1,7 +1,6 @@
 \acswitchoff 
 \babel@toc {english}{}\relax 
-\contentsline {chapter}{Thanks}{ii}{chapter*.1}%
-\contentsline {chapter}{Dedication}{iii}{chapter*.2}%
+\contentsline {chapter}{General Introduction}{1}{chapter*.8}%
 \setcounter {tocdepth}{2}
 \contentsline {chapter}{\numberline {1}General framework of the project}{3}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Presentation of the host organization}{3}{section.1.1}%
@@ -30,10 +29,29 @@
 \contentsline {section}{\numberline {3.1}Global Architecture}{30}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Definition of the Model-View-Controller design pattern}{30}{subsection.3.1.1}%
 \contentsline {subsection}{\numberline {3.1.2}Application of the "MVC" pattern}{32}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Dynamic view of the application}{42}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Detailed sequence diagram of the "register" use case}{43}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Detailed sequence diagram of the "login" use case}{43}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Detailed sequence diagram of the "search company" use case}{45}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Detailed sequence diagram of the "follow company" use case}{46}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Detailed sequence diagram of the "purchase documents" use case}{47}{subsection.3.2.5}%
+\contentsline {section}{\numberline {3.2}Dynamic view of the application}{41}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Detailed sequence diagram of the "Choose community" use case}{41}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Detailed sequence diagram of the "Access synthetic dashboard" use case}{42}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Detailed sequence diagram of the "Consult users List" use case}{44}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Detailed sequence diagram of the "Add members" use case}{45}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Detailed sequence diagram of the "Consult failed login attempts" use case}{46}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Detailed sequence diagram of the "Consult connection history" use case}{47}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.7}Detailed sequence diagram of the "Access Chatbot" use case}{48}{subsection.3.2.7}%
+\contentsline {chapter}{\numberline {4}Implementation}{50}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Technical specification}{50}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Hardware environment}{50}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Software environment}{51}{subsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.1}Software tools}{51}{subsubsection.4.1.2.1}%
+\contentsline {subsubsection}{\numberline {4.1.2.2}APIs and libraries}{57}{subsubsection.4.1.2.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.3}Programming languages and frameworks}{58}{subsubsection.4.1.2.3}%
+\contentsline {subsection}{\numberline {4.1.3}Deployment diagram of the application}{60}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Application interfaces}{61}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Launching the application}{61}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Community Dashboard}{62}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}User list }{65}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Add users}{66}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Connection history}{67}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.6}Failed login attempts}{69}{subsection.4.2.6}%
+\contentsline {subsection}{\numberline {4.2.7}Chatbot}{71}{subsection.4.2.7}%
+\contentsline {chapter}{Conclusion and perspectives}{73}{chapter*.57}%
 \setcounter {tocdepth}{3}

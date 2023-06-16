@@ -40,7 +40,7 @@ between entities (classes). Indeed, this diagram translates the content of the \
 Description of classes representing our Model:
 \begin{itemize}
 \item \textbf{User:}\\
-This class represents our application's Salesforce user who is the main focus of the administrator and the community manager when working within our app. This class's most important attributes in our application are:
+This class represents our application's Salesforce user, who is the main focus of the administrator and community managers main focus when working within our app. This class's most important attributes in our application are:
 \begin{itemize}
 \item[•] Id: the unique identification key for the user 
 \item[•] Active: determines the status of the user (active or not active)
@@ -104,7 +104,7 @@ This class represents the Salesforce purchased user license connected to the com
 
 \end{itemize}
 \item \textbf{Network}\\
-This class represents the community created by the administrator or the community manager in our application. This class's most important attributes in our application are:
+This class represents the community created by our application's administrator or the community manager. This class's most important attributes in our application are:
 \begin{itemize}
 \item[•] Id: the unique identification key for the network 
 \item[•] Created By: a lookup field that represents the user who created the Salesforce community 
@@ -157,13 +157,13 @@ This class represents the login event's geographic location details that are rec
 
 \end{itemize}
 \item \textbf{TraceFlag}\\
-This class represents the tracked users and entities regarding monitoring logs for programming errors and bugs committed by developers in the community and will be used to register said users so that their error logs will be monitor by the administrator. This class's most important attributes in our application are:
+This class represents the tracked users and entities regarding monitoring logs for programming errors and bugs committed by developers in the community and will be used to register said users so that their error logs will be monitored by the administrator. This class's most important attributes in our application are:
 \begin{itemize}
 \item[•] Id: the unique identification key for the traceFlag
 \item[•] StartDate: represents the tracking event's starting date for the created trace flag
 \item[•] ExpirationDate: represents the expiration date for the created trace flag
-\item[•] DebugLevelId: a lookup field that connects the traceflag to the Debulevel object in Salesforce , in our application this field will have the default value of the SFDC DevConsole's Id 
-\item[•] LogType: determines the type of logging that will be returned when requesting it, in our application it will take the default value of "USER \_ DEBUG" since we will be tracking users error logs
+\item[•] DebugLevelId: a lookup field that connects the traceflag to the Debulevel object in Salesforce, in our application this field will have the default value of the SFDC DevConsole's Id 
+\item[•] LogType: determines the type of logging that will be returned when requesting it, in our application, it will take the default value of "USER \_ DEBUG" since we will be tracking users' error logs
 \item[•] TracedEntityId: represents the id of the tracked user
 
 \end{itemize}
@@ -175,130 +175,97 @@ This class represents a configuration setting that determines the level of detai
 
 \end{itemize}
 \item \textbf{ApexLog}\\
-This class represents the detailed logs of the execution of all Apex code ran by the tracked user within the community, and it will be used in our application to provide said logs the administrator. This class's most important attributes in our application are:
+This class represents the detailed logs of the execution of all Apex code run by the tracked user within the community, and it will be used in our application to provide said logs to the administrator. This class's most important attributes in our application are:
 \begin{itemize}
 \item[•] Id: the unique identification key for the apexLog
-\item[•] Body: represents the plain text containing execution traces, debug operations and outputs and errors provided by the called Apex methods
+\item[•] Body: represents the plain text containing execution traces, debug operations and outputs, and errors provided by the called Apex methods
 \item[•] LogUserId: a lookup field representing the user who ran the Apex code which generated the ApexLog
-\item[•] StartDate: represents date and time marking the beginning of the Apex code's execution
+\item[•] StartDate: represents the date and time marking the beginning of the Apex code's execution
 \item[•] Status: represents the title of the main event's log (for example out of bound exception)
 
 \end{itemize}
 \end{itemize}
 %End of page 35 in the Selma report%
-The classes we have defined in the "Entities" layer are related to the German business field, employable in various types of commercial applications, and
-independent of our application. Thus, we made the
+The classes we have defined in the "Model" component are related to the Salesforce object infrastructure, and employable in various types of features in our application. Thus, we made the
 principle of independence between the business rules and the application rules.\\
-For the rest of the layers of the Clean architecture pattern, we will describe
-the dependencies between these layers by giving an example of a connection between a
-set of classes belonging to these layers.
-The following figure represents the general dependence in our case between the
-layers of the clean architecture pattern.
-\begin{figure}[H]%
-    \center   
-    \includegraphics[scale=0.5]{ca_dep.png}
-    \caption{General dependency diagram}
-\end{figure}
-\begin{itemize}
-\item The domain layer (Entities) is independent of all layers.
-\item The application layer (Usecase) depends on the domain layer and is independent of other layers. This layer prepares responses to
-user queries using entities.
-\item The adapters interface layer depends on the application(Usecase) layer.
-This layer transmits the user request and the necessary data
-to its processing at the Use Cases layer and retrieves the response and structure
-for the User Interface component.
-\item The user interface (UI) component of the "External technologies" layer
-depends on the interface layer adapters through the Presenter an n
-pass the user's request to it and retrieves the response.
-\item The database component of the "External technologies" layer
-allows the Use Case layer to retrieve data through a
-Gateway(Repository) belonging to the Interface Adapter layer.
 
-\end{itemize}
-The following figure shows an example of a detailed dependency between
-layers of the clean architecture pattern in the case of our application. These dependencies link a set of classes belonging to the different layers.
-These classes realize the example of the functionality of displaying the list of
-users.
-\begin{figure}[H]%
-    \center   
-    \includegraphics[scale=0.5]{ca_dep_detail.png}
-    \caption{Detailed dependency diagram in case of functionality
-print the list of users}
-\end{figure}
-According to the figure, the Interface Adapter layer (UserPresenter and UserRepository)
-communicates (passing and retrieving data) with the Use layer
-boxes by implementing or instantiating its IGetListUser and IUser-
-Repository. These interfaces represent the "ports" of the Use Cases layer.
-This example shows how we realized the principle of independence
-from the core of the application of the technologies used. No instance of the
-adapters interface layer or outer layer exists in the app's core.
+
 \section{Dynamic view of the application}
-In this section, we will describe the internal dynamic of our application using sequence diagrams and activity diagrams
-\subsection{Detailed sequence diagram of the "register" use case}
+In this section, we will describe the internal dynamic of our application using sequence diagrams 
+\subsection{Detailed sequence diagram of the "Choose community" use case}
 The following figure illustrates the detailed sequence diagram of the use case
-"Register".
-This use case starts with opening a registration interface
-for the user. Then, the user enters his coordinates and confirms them.
-The system displays an error message if the email already exists otherwise it redirects
-the user to the home page. 
+"Choose community".
+This use case starts with opening a community list interface
+for the user. Then, the user may enter his searched community name or a few letters of it.
+The system displays an error message if there are no communities found with the entered name otherwise it displays found communities. Then the user may choose to access one of the displayed communities, then the system redirects the user to that community dashboard. 
 \begin{figure}[H]%
     \center   
-    \includegraphics[scale=0.5]{seq_r.png}
-    \caption{Detailed sequence diagram of the "register" use case}
+    \includegraphics[scale=0.5]{Choose community_seq.jpg}
+    \caption{Detailed sequence diagram of the "Choose community" use case}
 \end{figure}
-\subsection{Detailed sequence diagram of the "login" use case}
+\subsection{Detailed sequence diagram of the "Access synthetic dashboard" use case}
 The following figure illustrates the detailed sequence diagram of the use case
-"login".
-This use case starts with opening a login interface
-for the user. Then, the user enters his email and password then confirms them.
-The system displays an error message if the email or the password is incorrect otherwise it redirects
-the user to the home page.
-the user may also choose to log in using a social media account ( Google, Facebook, LinkedIn, Xing), by taping the dedicated button to each social media which will redirect him to the interface provided by that specific social media API, the user will be redirected to the home interface upon successful social media login.
+"Access synthetic dashboard".
+This use case starts with opening a dashboard interface specific to the community chosen
+by the user. The user may consult the account distribution chart, licenses distribution chart, login attempts distribution chart, time spent in community chart, and developers' error metrics chart where he will be able to select a specific user to monitor their error logs.
   \begin{figure}[H]%
     \center   
-    \includegraphics[scale=0.5]{seq_l.png}
-    \caption{Detailed sequence diagram of the "login" use case}
-\end{figure}
-\begin{figure}[H]%
-    \center   
-    \includegraphics[scale=0.4]{seq_ls.png}
-    \caption{Detailed sequence diagram of the "login with social media" use case}
-\end{figure}
-\subsection{Detailed sequence diagram of the "search company" use case}
-The following figure illustrates the detailed sequence diagram of the use case
-"search company".
-This use case starts with opening an interface for the company's search for the user. Then the user enters the name of the wanted company's name or the first letters of its name, he may also add some filter to the results using a different interface (by state, zip code, legal form, capital, branch), upon confirming his request the interface will prompt an interactive list of results where the user may tap one of them to access more detailed information about it.
- \begin{figure}[H]%
-    \center   
-    \includegraphics[scale=0.5]{seq_s.png}
-    \caption{Detailed sequence diagram of the "search company" use case}
+    \includegraphics[scale=0.38]{Access synthetic dashboard_seq.jpg}
+    \caption{Detailed sequence diagram of the "Access synthetic dashboard" use case}
 \end{figure}
 
-\subsection{Detailed sequence diagram of the "follow company" use case}
+\subsection{Detailed sequence diagram of the "Consult users List" use case}
 The following figure illustrates the detailed sequence diagram of the use case
-"follow company".
-This use case starts with opening an interface containing specific company details for the user. Then the user may tap the follow button to add that company to his tracked companies list and start receiving notifications about it, these notifications may be deactivated later in the tracked companies interface.
-\begin{figure}[H]%
+"Consult users List".
+This use case starts with opening an interface displaying a data table containing information about the user's community members. Then the user may search for a specific user using his Salesforce user name, full name, or his email address, he may also filter given results by account name, user status (active or not active), profile name, or account name. For the displayed members the user may choose to send welcome emails, send reset password emails to selected members as well as update their current status and their information.
+ \begin{figure}[H]%
     \center   
-    \includegraphics[scale=0.5]{seq_f.png}
-    \caption{Detailed sequence diagram of the "follow company" use case}
+    \includegraphics[scale=0.38]{Consult users List_seq.jpg}
+    \caption{Detailed sequence diagram of the "Consult users List" use case}
 \end{figure}
-\subsection{Detailed sequence diagram of the "purchase documents" use case}
+\subsection{Detailed sequence diagram of the "Add members" use case}
 The following figure illustrates the detailed sequence diagram of the use case
-"purchase documents".
-This use case starts with opening an interface containing specific company details for the user. Then the user may scroll down to the documents section and add wanted documents to his cart, after that he may checkout and finalize his purchase process after filling in his credit card details. As a result, the purchased documents are added to the user's inventory interface and he may download them.
+"Add members".
+This use case starts with opening an interface displaying an empty form containing input fields representing required and optional information about the new community member, the user may choose to add another empty form, add another form containing the same values as the previous one or delete the last form. Afterward, the user may choose to submit all forms where the system will prompt an error message in case one or more required fields are missing, the type user name already exists or the license limits are exceeded, otherwise, the system will prompt the success of the insert operation and will refresh the users' list. 
+ \begin{figure}[H]%
+    \center   
+    \includegraphics[scale=0.4]{Add members_seq.jpg}
+    \caption{Detailed sequence diagram of the "Add members" use case}
+\end{figure}
+
+\subsection{Detailed sequence diagram of the "Consult failed login attempts" use case}
+The following figure illustrates the detailed sequence diagram of the use case
+"Consult failed login attempts".
+This use case starts with opening an interface displaying a data table containing information about the failed login attempts committed by the user's community members. Then the user may search for a specific login event using the member's Salesforce user name or his full name, he may also filter given results by login event status (invalid password, no community access, etc) or by its date and time. For the displayed events the user may choose to send welcome security warning email to the concerned member or consult details about the full login event.
 \begin{figure}[H]%
     \center   
-    \includegraphics[scale=0.4]{seq_p.png}
-    \caption{Detailed sequence diagram of the "purchase documents" use case}
+    \includegraphics[scale=0.4]{Consult failed login attempts_seq.jpg}
+    \caption{Detailed sequence diagram of the "Consult failed login attempts" use case}
+\end{figure}
+\subsection{Detailed sequence diagram of the "Consult connection history" use case}
+The following figure illustrates the detailed sequence diagram of the use case
+"Consult connection history".
+This use case starts with opening an interface containing a bar chart displaying the number of logins for each member, the user may filter displayed results by date and time or by time range (yesterday, last week, or last month). For the displayed results the user may select a specific member to access further information about him where he will also be able to update his Salesforce user license.
+\begin{figure}[H]%
+    \center   
+    \includegraphics[scale=0.45]{Consult connection history_seq.jpg}
+    \caption{Detailed sequence diagram of the "Consult connection history" use case}
+\end{figure}
+\subsection{Detailed sequence diagram of the "Access Chatbot" use case}
+The following figure illustrates the detailed sequence diagram of the use case
+"Access Chatbot".
+This use case starts with opening a chat interface where the user may type any question that he wants to ask the digital assistant, he may also select one of the predefined questions proposed by the system, then the system will prompt the answer given by the Chatbot or display an error in case there is one. Next, the user will be asked for feedback regarding the given answer and he will be able to click the like or the dislike button, the given feedback will be saved in the current Salesforce organization database and will be exploited for future updates of the Chatbot.
+\begin{figure}[H]%
+    \center   
+    \includegraphics[scale=0.5]{Access Chatbot_seq.jpg}
+    \caption{Detailed sequence diagram of the "Access Chatbot" use case}
 \end{figure}
 \section*{Conclusion}
 This chapter presents one of the most important phases of the process of
-development of a project: design subdivided into the overall design
-and detailed design.\\
-We presented a Clean Architecture architecture pattern and we
+development of a project: conception subdivided into the overall conception
+and detailed conception.\\
+We presented an MVC pattern and we
 explained its application in our case. We have described the dynamic view
-of the system through a set of sequence diagrams and diagrams
-of activities.\\
-The following chapter will deal with the realization of the project illustrated by screenshots of different interfaces. We will describe the environment of
+of the system through a set of sequence diagrams.\\
+The following chapter will deal with the implementation of the project illustrated by screenshots of different interfaces. We will describe the environment of
 work and the tools used too.
