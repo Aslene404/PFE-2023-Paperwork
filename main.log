@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.7)  15 JUN 2023 11:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.7)  26 JUN 2023 09:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1669,12 +1669,12 @@ Underfull \hbox (badness 4328) in paragraph at lines 30--31
 -op-ers can pro-vide as-sis-tance and
  []
 
-<./images//techlead.png, id=576, 1319.93124pt x 745.78625pt>
+<./images//techlead.png, id=584, 1319.93124pt x 745.78625pt>
 File: ./images//techlead.png Graphic file (type png)
 <use ./images//techlead.png>
 Package pdftex.def Info: ./images//techlead.png  used on input line 35.
 (pdftex.def)             Requested size: 263.98157pt x 149.1546pt.
-<./images//context.png, id=578, 599.99156pt x 252.19218pt>
+<./images//context.png, id=586, 599.99156pt x 252.19218pt>
 File: ./images//context.png Graphic file (type png)
 <use ./images//context.png>
 Package pdftex.def Info: ./images//context.png  used on input line 52.
@@ -1685,18 +1685,18 @@ Overfull \hbox (24.74979pt too wide) in paragraph at lines 52--53
  []
 
 [4 <./images//techlead.png>]
-<./images//chatter.jpg, id=585, 290.0436pt x 278.9622pt>
+<./images//chatter.jpg, id=593, 290.0436pt x 278.9622pt>
 File: ./images//chatter.jpg Graphic file (type jpg)
 <use ./images//chatter.jpg>
 Package pdftex.def Info: ./images//chatter.jpg  used on input line 59.
 (pdftex.def)             Requested size: 232.03519pt x 223.17006pt.
  [5 <./images//context.png> <./images//chatter.jpg>]
-<./images//usecases.png, id=591, 402.00188pt x 334.24875pt>
+<./images//usecases.png, id=599, 402.00188pt x 334.24875pt>
 File: ./images//usecases.png Graphic file (type png)
 <use ./images//usecases.png>
 Package pdftex.def Info: ./images//usecases.png  used on input line 66.
 (pdftex.def)             Requested size: 321.60193pt x 267.39935pt.
-<./images//architecture.png, id=592, 615.99261pt x 316.72691pt>
+<./images//architecture.png, id=600, 615.99261pt x 316.72691pt>
 File: ./images//architecture.png Graphic file (type png)
 <use ./images//architecture.png>
 Package pdftex.def Info: ./images//architecture.png  used on input line 75.
@@ -1723,7 +1723,7 @@ Underfull \hbox (badness 1571) in paragraph at lines 129--130
 chi-tec-ture: a soft-ware
  []
 
-<./images//mvc.jpg, id=617, 252.19218pt x 266.49562pt>
+<./images//mvc.jpg, id=625, 252.19218pt x 266.49562pt>
 File: ./images//mvc.jpg Graphic file (type jpg)
 <use ./images//mvc.jpg>
 Package pdftex.def Info: ./images//mvc.jpg  used on input line 133.
@@ -1734,7 +1734,7 @@ Overfull \hbox (20.69965pt too wide) in paragraph at lines 148--155
  []
 
 [9 <./images//mvc.jpg>] [10]
-<./images//gantt.png, id=632, 438.8897pt x 292.84406pt>
+<./images//gantt.png, id=640, 438.8897pt x 292.84406pt>
 File: ./images//gantt.png Graphic file (type png)
 <use ./images//gantt.png>
 Package pdftex.def Info: ./images//gantt.png  used on input line 180.
@@ -1767,7 +1767,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--10
 
 
 ] [14] [15] [16]
-<./PFE Conception/StarUML Projects/jpg//Global UC.jpg, id=659, 1162.3425pt x 10
+<./PFE Conception/StarUML Projects/jpg//Global UC.jpg, id=667, 1162.3425pt x 10
 21.8175pt>
 File: ./PFE Conception/StarUML Projects/jpg//Global UC.jpg Graphic file (type j
 pg)
@@ -1781,7 +1781,7 @@ Overfull \hbox (67.80519pt too wide) in paragraph at lines 112--113
  []
 
 [17]
-<./PFE Conception/StarUML Projects/jpg//Consult users list UC.jpg, id=664, 1081
+<./PFE Conception/StarUML Projects/jpg//Consult users list UC.jpg, id=672, 1081
 .03876pt x 788.9475pt>
 File: ./PFE Conception/StarUML Projects/jpg//Consult users list UC.jpg Graphic 
 file (type jpg)
@@ -1811,7 +1811,7 @@ Overfull \hbox (62.98279pt too wide) in paragraph at lines 153--167
 
 [21]
 <./PFE Conception/StarUML Projects/jpg//Consult synthetic dashboard UC.jpg, id=
-682, 1037.8775pt x 531.9875pt>
+690, 1037.8775pt x 531.9875pt>
 File: ./PFE Conception/StarUML Projects/jpg//Consult synthetic dashboard UC.jpg
  Graphic file (type jpg)
 <use ./PFE Conception/StarUML Projects/jpg//Consult synthetic dashboard UC.jpg>
@@ -1832,7 +1832,7 @@ Overfull \hbox (14.70651pt too wide) in paragraph at lines 182--195
 [23 <./PFE Conception/StarUML Projects/jpg//Consult synthetic dashboard UC.jpg>
 ]
 <./PFE Conception/StarUML Projects/jpg//Consult failed login attempts.jpg, id=6
-91, 1006.76125pt x 580.1675pt>
+99, 1006.76125pt x 580.1675pt>
 File: ./PFE Conception/StarUML Projects/jpg//Consult failed login attempts.jpg 
 Graphic file (type jpg)
 <use ./PFE Conception/StarUML Projects/jpg//Consult failed login attempts.jpg>
@@ -1855,7 +1855,7 @@ Overfull \hbox (35.4187pt too wide) in paragraph at lines 208--221
  []
 
 [25 <./PFE Conception/StarUML Projects/jpg//Consult failed login attempts.jpg>]
-<./PFE Conception/StarUML Projects/jpg//Access Chatbot.jpg, id=700, 896.34875pt
+<./PFE Conception/StarUML Projects/jpg//Access Chatbot.jpg, id=708, 896.34875pt
  x 548.0475pt>
 File: ./PFE Conception/StarUML Projects/jpg//Access Chatbot.jpg Graphic file (t
 ype jpg)
@@ -1881,12 +1881,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--1
 
 
 ]
-<./images//mvc2.jpg, id=722, 819.06pt x 457.71pt>
+<./images//mvc2.jpg, id=730, 819.06pt x 457.71pt>
 File: ./images//mvc2.jpg Graphic file (type jpg)
 <use ./images//mvc2.jpg>
 Package pdftex.def Info: ./images//mvc2.jpg  used on input line 26.
 (pdftex.def)             Requested size: 409.52899pt x 228.85445pt.
-<./PFE Conception/StarUML Projects/jpg//ClassDiagram.jpg, id=723, 1322.9425pt x
+<./PFE Conception/StarUML Projects/jpg//ClassDiagram.jpg, id=731, 1322.9425pt x
  1700.3525pt>
 File: ./PFE Conception/StarUML Projects/jpg//ClassDiagram.jpg Graphic file (typ
 e jpg)
@@ -1909,7 +1909,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 189--191
 
  []
 
-<./PFE Conception/StarUML Projects/jpg//Choose community_seq.jpg, id=766, 1021.
+<./PFE Conception/StarUML Projects/jpg//Choose community_seq.jpg, id=774, 1021.
 8175pt x 643.40375pt>
 File: ./PFE Conception/StarUML Projects/jpg//Choose community_seq.jpg Graphic f
 ile (type jpg)
@@ -1924,7 +1924,7 @@ Overfull \hbox (55.66339pt too wide) in paragraph at lines 203--204
 
 [41]
 <./PFE Conception/StarUML Projects/jpg//Access synthetic dashboard_seq.jpg, id=
-771, 1375.1375pt x 1495.5875pt>
+779, 1375.1375pt x 1495.5875pt>
 File: ./PFE Conception/StarUML Projects/jpg//Access synthetic dashboard_seq.jpg
  Graphic file (type jpg)
 <use ./PFE Conception/StarUML Projects/jpg//Access synthetic dashboard_seq.jpg>
@@ -1938,7 +1938,7 @@ Overfull \hbox (67.31358pt too wide) in paragraph at lines 213--214
  []
 
 [42 <./PFE Conception/StarUML Projects/jpg//Choose community_seq.jpg>]
-<./PFE Conception/StarUML Projects/jpg//Consult users List_seq.jpg, id=776, 134
+<./PFE Conception/StarUML Projects/jpg//Consult users List_seq.jpg, id=784, 134
 3.0175pt x 1198.4775pt>
 File: ./PFE Conception/StarUML Projects/jpg//Consult users List_seq.jpg Graphic
  file (type jpg)
@@ -1953,7 +1953,7 @@ Overfull \hbox (55.10785pt too wide) in paragraph at lines 223--224
 
 [43 <./PFE Conception/StarUML Projects/jpg//Access synthetic dashboard_seq.jpg>
 ]
-<./PFE Conception/StarUML Projects/jpg//Add members_seq.jpg, id=781, 1222.5675p
+<./PFE Conception/StarUML Projects/jpg//Add members_seq.jpg, id=789, 1222.5675p
 t x 1142.2675pt>
 File: ./PFE Conception/StarUML Projects/jpg//Add members_seq.jpg Graphic file (
 type jpg)
@@ -1969,7 +1969,7 @@ Overfull \hbox (33.77423pt too wide) in paragraph at lines 232--233
 [44 <./PFE Conception/StarUML Projects/jpg//Consult users List_seq.jpg>]
 [45]
 <./PFE Conception/StarUML Projects/jpg//Consult failed login attempts_seq.jpg, 
-id=791, 1190.4475pt x 981.6675pt>
+id=799, 1190.4475pt x 981.6675pt>
 File: ./PFE Conception/StarUML Projects/jpg//Consult failed login attempts_seq.
 jpg Graphic file (type jpg)
 <use ./PFE Conception/StarUML Projects/jpg//Consult failed login attempts_seq.j
@@ -1984,7 +1984,7 @@ Overfull \hbox (20.92645pt too wide) in paragraph at lines 242--243
 
 [46 <./PFE Conception/StarUML Projects/jpg//Add members_seq.jpg>]
 <./PFE Conception/StarUML Projects/jpg//Consult connection history_seq.jpg, id=
-796, 1086.0575pt x 796.9775pt>
+804, 1086.0575pt x 796.9775pt>
 File: ./PFE Conception/StarUML Projects/jpg//Consult connection history_seq.jpg
  Graphic file (type jpg)
 <use ./PFE Conception/StarUML Projects/jpg//Consult connection history_seq.jpg>
@@ -1999,7 +1999,7 @@ Overfull \hbox (33.47725pt too wide) in paragraph at lines 251--252
 
 [47 <./PFE Conception/StarUML Projects/jpg//Consult failed login attempts_seq.j
 pg>]
-<./PFE Conception/StarUML Projects/jpg//Access Chatbot_seq.jpg, id=801, 1023.82
+<./PFE Conception/StarUML Projects/jpg//Access Chatbot_seq.jpg, id=809, 1023.82
 5pt x 756.8275pt>
 File: ./PFE Conception/StarUML Projects/jpg//Access Chatbot_seq.jpg Graphic fil
 e (type jpg)
@@ -2036,7 +2036,7 @@ Underfull \hbox (badness 2057) in paragraph at lines 36--38
 ols and the fol-low-ing
  []
 
-<./images//vs.png, id=814, 1204.5pt x 647.41875pt>
+<./images//vs.png, id=822, 1204.5pt x 647.41875pt>
 File: ./images//vs.png Graphic file (type png)
 <use ./images//vs.png>
 Package pdftex.def Info: ./images//vs.png  used on input line 45.
@@ -2047,7 +2047,7 @@ Overfull \hbox (26.54736pt too wide) in paragraph at lines 45--46
  []
 
 [51]
-<./images//extensions.png, id=820, 1162.3425pt x 415.5525pt>
+<./images//extensions.png, id=828, 1162.3425pt x 415.5525pt>
 File: ./images//extensions.png Graphic file (type png)
 <use ./images//extensions.png>
 Package pdftex.def Info: ./images//extensions.png  used on input line 52.
@@ -2064,12 +2064,12 @@ Underfull \hbox (badness 1769) in paragraph at lines 49--54
  []
 
 [52 <./images//vs.png>] [53 <./images//extensions.png>]
-<./images//cli.png, id=831, 908.64468pt x 576.65437pt>
+<./images//cli.png, id=839, 908.64468pt x 576.65437pt>
 File: ./images//cli.png Graphic file (type png)
 <use ./images//cli.png>
 Package pdftex.def Info: ./images//cli.png  used on input line 74.
 (pdftex.def)             Requested size: 363.45143pt x 230.65765pt.
-<./images//inspector.png, id=832, 1204.5pt x 647.41875pt>
+<./images//inspector.png, id=840, 1204.5pt x 647.41875pt>
 File: ./images//inspector.png Graphic file (type png)
 <use ./images//inspector.png>
 Package pdftex.def Info: ./images//inspector.png  used on input line 84.
@@ -2085,7 +2085,7 @@ Underfull \hbox (badness 1331) in paragraph at lines 89--91
 -force im-ple-men-ta-tions. This
  []
 
-<./images//maven.png, id=838, 1204.5pt x 647.41875pt>
+<./images//maven.png, id=846, 1204.5pt x 647.41875pt>
 File: ./images//maven.png Graphic file (type png)
 <use ./images//maven.png>
 Package pdftex.def Info: ./images//maven.png  used on input line 94.
@@ -2096,7 +2096,7 @@ Overfull \hbox (26.54736pt too wide) in paragraph at lines 94--95
  []
 
 [55 <./images//inspector.png>]
-<./images//star.png, id=844, 1204.5pt x 647.41875pt>
+<./images//star.png, id=852, 1204.5pt x 647.41875pt>
 File: ./images//star.png Graphic file (type png)
 <use ./images//star.png>
 Package pdftex.def Info: ./images//star.png  used on input line 103.
@@ -2124,7 +2124,7 @@ re-ate vi-su-ally con-sis-tent and
  []
 
 [59]
-<./PFE Conception/StarUML Projects/jpg//DeploymentDiagram.jpg, id=864, 1270.747
+<./PFE Conception/StarUML Projects/jpg//DeploymentDiagram.jpg, id=872, 1270.747
 5pt x 403.5075pt>
 File: ./PFE Conception/StarUML Projects/jpg//DeploymentDiagram.jpg Graphic file
  (type jpg)
@@ -2138,7 +2138,7 @@ Overfull \hbox (53.04588pt too wide) in paragraph at lines 154--155
  []
 
 [60 <./PFE Conception/StarUML Projects/jpg//DeploymentDiagram.jpg>]
-<./images//home.png, id=869, 1204.5pt x 647.41875pt>
+<./images//home.png, id=877, 1204.5pt x 647.41875pt>
 File: ./images//home.png Graphic file (type png)
 <use ./images//home.png>
 Package pdftex.def Info: ./images//home.png  used on input line 180.
@@ -2149,7 +2149,7 @@ Overfull \hbox (26.54736pt too wide) in paragraph at lines 180--181
  []
 
 [61]
-<./images//dashboard1.png, id=874, 1204.5pt x 647.41875pt>
+<./images//dashboard1.png, id=882, 1204.5pt x 647.41875pt>
 File: ./images//dashboard1.png Graphic file (type png)
 <use ./images//dashboard1.png>
 Package pdftex.def Info: ./images//dashboard1.png  used on input line 188.
@@ -2166,7 +2166,7 @@ ts dis-tri-bu-tion chart, Sales-force
  []
 
 [62 <./images//home.png>]
-<./images//dashboard2.png, id=880, 1204.5pt x 647.41875pt>
+<./images//dashboard2.png, id=888, 1204.5pt x 647.41875pt>
 File: ./images//dashboard2.png Graphic file (type png)
 <use ./images//dashboard2.png>
 Package pdftex.def Info: ./images//dashboard2.png  used on input line 194.
@@ -2176,7 +2176,7 @@ Overfull \hbox (26.54736pt too wide) in paragraph at lines 194--195
  [] 
  []
 
-<./images//dashboard3.png, id=881, 1204.5pt x 647.41875pt>
+<./images//dashboard3.png, id=889, 1204.5pt x 647.41875pt>
 File: ./images//dashboard3.png Graphic file (type png)
 <use ./images//dashboard3.png>
 Package pdftex.def Info: ./images//dashboard3.png  used on input line 200.
@@ -2187,7 +2187,7 @@ Overfull \hbox (26.54736pt too wide) in paragraph at lines 200--201
  []
 
 [63 <./images//dashboard1.png> <./images//dashboard2.png>]
-<./images//dashboard4.png, id=889, 1204.5pt x 647.41875pt>
+<./images//dashboard4.png, id=897, 1204.5pt x 647.41875pt>
 File: ./images//dashboard4.png Graphic file (type png)
 <use ./images//dashboard4.png>
 Package pdftex.def Info: ./images//dashboard4.png  used on input line 206.
@@ -2198,7 +2198,7 @@ Overfull \hbox (26.54736pt too wide) in paragraph at lines 206--207
  []
 
 [64 <./images//dashboard3.png> <./images//dashboard4.png>]
-<./images//userlist1.png, id=896, 1204.5pt x 647.41875pt>
+<./images//userlist1.png, id=904, 1204.5pt x 647.41875pt>
 File: ./images//userlist1.png Graphic file (type png)
 <use ./images//userlist1.png>
 Package pdftex.def Info: ./images//userlist1.png  used on input line 214.
@@ -2208,7 +2208,7 @@ Overfull \hbox (26.54736pt too wide) in paragraph at lines 214--215
  [] 
  []
 
-<./images//userlist2.png, id=897, 1204.5pt x 647.41875pt>
+<./images//userlist2.png, id=905, 1204.5pt x 647.41875pt>
 File: ./images//userlist2.png Graphic file (type png)
 <use ./images//userlist2.png>
 Package pdftex.def Info: ./images//userlist2.png  used on input line 220.
@@ -2219,7 +2219,7 @@ Overfull \hbox (26.54736pt too wide) in paragraph at lines 220--221
  []
 
 [65 <./images//userlist1.png>]
-<./images//useradd.png, id=903, 1204.5pt x 647.41875pt>
+<./images//useradd.png, id=911, 1204.5pt x 647.41875pt>
 File: ./images//useradd.png Graphic file (type png)
 <use ./images//useradd.png>
 Package pdftex.def Info: ./images//useradd.png  used on input line 229.
@@ -2230,7 +2230,7 @@ Overfull \hbox (26.54736pt too wide) in paragraph at lines 229--230
  []
 
 [66 <./images//userlist2.png>]
-<./images//history1.png, id=909, 963.6pt x 740.7675pt>
+<./images//history1.png, id=917, 963.6pt x 740.7675pt>
 File: ./images//history1.png Graphic file (type png)
 <use ./images//history1.png>
 Package pdftex.def Info: ./images//history1.png  used on input line 237.
@@ -2241,7 +2241,7 @@ Overfull \hbox (26.55472pt too wide) in paragraph at lines 237--238
  []
 
 [67 <./images//useradd.png>]
-<./images//history2.png, id=915, 963.6pt x 740.7675pt>
+<./images//history2.png, id=923, 963.6pt x 740.7675pt>
 File: ./images//history2.png Graphic file (type png)
 <use ./images//history2.png>
 Package pdftex.def Info: ./images//history2.png  used on input line 244.
@@ -2252,7 +2252,7 @@ Overfull \hbox (26.55472pt too wide) in paragraph at lines 244--245
  []
 
 [68 <./images//history1.png>]
-<./images//loginattempts1.png, id=921, 963.6pt x 740.7675pt>
+<./images//loginattempts1.png, id=929, 963.6pt x 740.7675pt>
 File: ./images//loginattempts1.png Graphic file (type png)
 <use ./images//loginattempts1.png>
 Package pdftex.def Info: ./images//loginattempts1.png  used on input line 254.
@@ -2263,7 +2263,7 @@ Overfull \hbox (26.55472pt too wide) in paragraph at lines 254--255
  []
 
 [69 <./images//history2.png>]
-<./images//loginattempts2.png, id=928, 963.6pt x 740.7675pt>
+<./images//loginattempts2.png, id=936, 963.6pt x 740.7675pt>
 File: ./images//loginattempts2.png Graphic file (type png)
 <use ./images//loginattempts2.png>
 Package pdftex.def Info: ./images//loginattempts2.png  used on input line 261.
@@ -2274,7 +2274,7 @@ Overfull \hbox (26.55472pt too wide) in paragraph at lines 261--262
  []
 
 [70 <./images//loginattempts1.png>]
-<./images//chatbot.png, id=934, 963.6pt x 740.7675pt>
+<./images//chatbot.png, id=942, 963.6pt x 740.7675pt>
 File: ./images//chatbot.png Graphic file (type png)
 <use ./images//chatbot.png>
 Package pdftex.def Info: ./images//chatbot.png  used on input line 270.
@@ -2344,9 +2344,9 @@ fb><C:/Users/Aslene/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a
 .pfb><C:/Users/Aslene/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8
 a.pfb><C:/Users/Aslene/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr
 i8a.pfb>
-Output written on main.pdf (84 pages, 4278505 bytes).
+Output written on main.pdf (84 pages, 4287425 bytes).
 PDF statistics:
- 1042 PDF objects out of 1200 (max. 8388607)
+ 1050 PDF objects out of 1200 (max. 8388607)
  220 named destinations out of 1000 (max. 500000)
  678 words of extra memory for PDF output out of 10000 (max. 10000000)
 
