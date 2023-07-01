@@ -13,28 +13,30 @@ Our chosen architecture of work for this project will be the MVC  architecture s
 The model-view-controller (MVC) design pattern specifies that an application consists of a data model, presentation information, and control information.\cite{5} \\
 The pattern requires that each of these be separated into different objects:
 \begin{itemize}
-\item \textbf{The model} (for example, the data information) contains only pure application data; it contains no logic describing how to present the data to a user. \cite{5}
-\item \textbf{The view} (for example, the presentation information) presents the model's data to the user. The view knows how to access the model's data but does not know what this data means or what the user can do to manipulate it. \cite{5}
+\item \textbf{The model} (for example, the data information) contains only pure application data; it contains no logic describing how to present the data to a user. 
+\item \textbf{The view} (for example, the presentation information) presents the model's data to the user. The view knows how to access the model's data but does not know what this data means or what the user can do to manipulate it. 
 \item \textbf{The controller} (for example, the control information) exists between the view and the model. It listens to events triggered by the view (or another external source) and executes the appropriate reaction to these events. In most cases, the reaction is to call a method on the model. Since the view and the model are connected through a notification mechanism, the result of this action is then automatically reflected in the view.\cite{5}
 \end{itemize}
 Thanks to these principles, the components of the application become easy to
 manage, test, modify, and reuse.\\
-The following figure explains furthermore the role and the idea behind each component of the MVC pattern:
+The figure \ref{mvc} explains furthermore the role and the idea behind each component of the MVC pattern:
 
 \begin{figure}[H]%
     \center   
     \includegraphics[scale=0.5]{mvc2.jpg}
     \caption{Understanding MVC Design Pattern, Source: \cite{7}}
+    \label{mvc}
 \end{figure}
 \subsection{Application of the "MVC" pattern}
 We explain in this paragraph the details of the projection of the pattern
 MVC on our app.\\
-The following figure represents the class diagram which illustrates the binding
+The figure \ref{classdiagram} represents the class diagram which illustrates the binding
 between entities (classes). Indeed, this diagram translates the content of the \textbf{Model} component, and it's based on the schema that is already established within the Salesforce infrastructure.
 \begin{figure}[H]%
     \center   
     \includegraphics[scale=0.4]{ClassDiagram.jpg}
     \caption{Class diagram representing the "Model" component}
+    \label{classdiagram}
 \end{figure}
 \newpage
 Description of classes representing our Model:
@@ -193,7 +195,7 @@ principle of independence between the business rules and the application rules.\
 \section{Dynamic view of the application}
 In this section, we will describe the internal dynamic of our application using sequence diagrams 
 \subsection{Detailed sequence diagram of the "Choose community" use case}
-The following figure illustrates the detailed sequence diagram of the use case
+The figure \ref{choose_seq} illustrates the detailed sequence diagram of the use case
 "Choose community".
 This use case starts with opening a community list interface
 for the user. Then, the user may enter his searched community name or a few letters of it.
@@ -202,9 +204,10 @@ The system displays an error message if there are no communities found with the 
     \center   
     \includegraphics[scale=0.5]{Choose community_seq.jpg}
     \caption{Detailed sequence diagram of the "Choose community" use case}
+    \label{choose_seq}
 \end{figure}
 \subsection{Detailed sequence diagram of the "Access synthetic dashboard" use case}
-The following figure illustrates the detailed sequence diagram of the use case
+The figure \ref{dashboard_seq} illustrates the detailed sequence diagram of the use case
 "Access synthetic dashboard".
 This use case starts with opening a dashboard interface specific to the community chosen
 by the user. The user may consult the account distribution chart, licenses distribution chart, login attempts distribution chart, time spent in community chart, and developers' error metrics chart where he will be able to select a specific user to monitor their error logs.
@@ -212,53 +215,59 @@ by the user. The user may consult the account distribution chart, licenses distr
     \center   
     \includegraphics[scale=0.38]{Access synthetic dashboard_seq.jpg}
     \caption{Detailed sequence diagram of the "Access synthetic dashboard" use case}
+    \label{dashboard_seq}
 \end{figure}
 
 \subsection{Detailed sequence diagram of the "Consult users List" use case}
-The following figure illustrates the detailed sequence diagram of the use case
+The figure \ref{userlist_seq} illustrates the detailed sequence diagram of the use case
 "Consult users List".
 This use case starts with opening an interface displaying a data table containing information about the user's community members. Then the user may search for a specific user using his Salesforce user name, full name, or his email address, he may also filter given results by account name, user status (active or not active), profile name, or account name. For the displayed members the user may choose to send welcome emails, send reset password emails to selected members as well as update their current status and their information.
  \begin{figure}[H]%
     \center   
     \includegraphics[scale=0.38]{Consult users List_seq.jpg}
     \caption{Detailed sequence diagram of the "Consult users List" use case}
+    \label{userlist_seq}
 \end{figure}
 \subsection{Detailed sequence diagram of the "Add members" use case}
-The following figure illustrates the detailed sequence diagram of the use case
+The figure \ref{addmembers_seq} illustrates the detailed sequence diagram of the use case
 "Add members".
 This use case starts with opening an interface displaying an empty form containing input fields representing required and optional information about the new community member, the user may choose to add another empty form, add another form containing the same values as the previous one or delete the last form. Afterward, the user may choose to submit all forms where the system will prompt an error message in case one or more required fields are missing, the type user name already exists or the license limits are exceeded, otherwise, the system will prompt the success of the insert operation and will refresh the users' list. 
  \begin{figure}[H]%
     \center   
     \includegraphics[scale=0.4]{Add members_seq.jpg}
     \caption{Detailed sequence diagram of the "Add members" use case}
+    \label{addmembers_seq}
 \end{figure}
 
 \subsection{Detailed sequence diagram of the "Consult failed login attempts" use case}
-The following figure illustrates the detailed sequence diagram of the use case
+The figure \ref{loginattempts_seq} illustrates the detailed sequence diagram of the use case
 "Consult failed login attempts".
 This use case starts with opening an interface displaying a data table containing information about the failed login attempts committed by the user's community members. Then the user may search for a specific login event using the member's Salesforce user name or his full name, he may also filter given results by login event status (invalid password, no community access, etc) or by its date and time. For the displayed events the user may choose to send welcome security warning email to the concerned member or consult details about the full login event.
 \begin{figure}[H]%
     \center   
     \includegraphics[scale=0.4]{Consult failed login attempts_seq.jpg}
     \caption{Detailed sequence diagram of the "Consult failed login attempts" use case}
+    \label{loginattempts_seq}
 \end{figure}
 \subsection{Detailed sequence diagram of the "Consult connection history" use case}
-The following figure illustrates the detailed sequence diagram of the use case
+The figure \ref{connection_seq} illustrates the detailed sequence diagram of the use case
 "Consult connection history".
 This use case starts with opening an interface containing a bar chart displaying the number of logins for each member, the user may filter displayed results by date and time or by time range (yesterday, last week, or last month). For the displayed results the user may select a specific member to access further information about him where he will also be able to update his Salesforce user license.
 \begin{figure}[H]%
     \center   
     \includegraphics[scale=0.45]{Consult connection history_seq.jpg}
     \caption{Detailed sequence diagram of the "Consult connection history" use case}
+    \label{connection_seq}
 \end{figure}
 \subsection{Detailed sequence diagram of the "Access Chatbot" use case}
-The following figure illustrates the detailed sequence diagram of the use case
+The figure \ref{chatbot_seq} illustrates the detailed sequence diagram of the use case
 "Access Chatbot".
 This use case starts with opening a chat interface where the user may type any question that he wants to ask the digital assistant, he may also select one of the predefined questions proposed by the system, then the system will prompt the answer given by the Chatbot or display an error in case there is one. Next, the user will be asked for feedback regarding the given answer and he will be able to click the like or the dislike button, the given feedback will be saved in the current Salesforce organization database and will be exploited for future updates of the Chatbot.
 \begin{figure}[H]%
     \center   
     \includegraphics[scale=0.5]{Access Chatbot_seq.jpg}
     \caption{Detailed sequence diagram of the "Access Chatbot" use case}
+    \label{chatbot_seq}
 \end{figure}
 \section*{Conclusion}
 This chapter presents one of the most important phases of the process of

@@ -19,7 +19,7 @@ Both the community manager and the Salesforce Administrator are the main users o
 \item[•] Deactivate users within a specific community.
 \item[•] Send a "Welcome to community" email to a specific active user.
 \item[•] Send a "Reset password" email to a specific active user.
-\item[•] Consult a bar chart that shows the number of logins of each user within the selected community.
+\item[•] Consult a bar chart showing each user's logins within the selected community.
 \item[•] Filter chart results by the period between two specific dates.
 \item[•] Consult details about each user displayed in the chart.
 \item[•] Update the Salesforce user license for each user displayed in the chart.
@@ -33,7 +33,7 @@ Both the community manager and the Salesforce Administrator are the main users o
 \end{itemize}
 In case when the community manager or the Salesforce Administrator has a Salesforce role he will be also able to :
 \begin{itemize}
-\item[•] Add one or multiple users at once to a specific community.
+\item[•] Add one or multiple users to a specific community at once.
 \end{itemize}
 
 \subsection*{Secondary actors}
@@ -106,23 +106,34 @@ The application will be available on 24/24 and 7/7 except during maintenance.
 In this section, we will highlight the system's functionalities to be
 from the functional needs mentioned above based on the UML(Unified Modeling Language) diagrams which group together all the system's use cases.
 \subsection{Global use case diagram}
-The following figure illustrates the global use case diagram of our application
+The figure \ref{global_uc} illustrates the global use case diagram of our application
 \begin{figure}[H]%
     \center   
     \includegraphics[scale=0.45]{Global UC.jpg}
     \caption{Global use case diagram}
+    \label{global_uc}
 \end{figure}
+Our application will provide both the community manager and the system administrator ,as long as they are authenticated to Salesforce, the ability to:
+\begin{itemize}
+\item Search for and select the community that they want to manage.
+\item Track community members by either consult the full user list or add new members, as long as they own a Salesforce role, where the Salesforce system will send an automatic welcome email to the new community member.
+\item Access synthetic dashboard illustrating the KPI (Key Performance Indicators) of the community.
+\item Access a smart Chatbot that will provide useful Salesforce information to the user.
+\item Consult and manage failed login attempts committed by community members and previously recorded and stored by the Salesforce system.
+\item Consult and filter members' connection history previously recorded and stored by the Salesforce system, as well as update their Salesforce license to match their level of activity.
+\end{itemize}
 \subsection{Use case refinement}
 In this section, we will detail the main use cases.
 \subsubsection{Consult user list use case refinement}
 In our application, the community manager and the system administrator can access a data table containing the full list of users within their respective communities.\\
-The following figure shows the Consult user list use case diagram.
+The figure \ref{userlist_uc} shows the Consult user list use case diagram.
 \begin{figure}[H]%
     \center   
     \includegraphics[scale=0.5]{Consult users list UC.jpg}
     \caption{Consult user list use case diagram}
+    \label{userlist_uc}
 \end{figure}
-The following table details the tasks to be performed by the user to manage the user list.
+The table \ref{userlist_table} details the tasks to be performed by the user to manage the user list.
 
 \begin{table}[H]
 \footnotesize% or \small or \scriptsize
@@ -141,15 +152,17 @@ The following table details the tasks to be performed by the user to manage the 
 \end{tabular}
 \captionsetup{skip=5pt} % Adjust the skip value as per your needs
 \caption{Consult user list use case}
+\label{userlist_table}
 
 \end{table}
 \pagebreak
 \subsubsection{Add members use case refinement}
-In our application, the community manager and the system administrator can add one or multiple members at once to their respective communities.\\
+In our application, the community manager and system administrator can add one or multiple members to their respective communities at once.\\
 
-The following table details the tasks to be performed by the user to add members to his community.
+The table \ref{addmembers_table} details the tasks to be performed by the user to add members to his community.
 
 \begin{table}[H]
+
 \begin{tabular}{|ll|}
 \hline
 \multicolumn{2}{|c|}{\textbf{Summary}}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      \\ \hline
@@ -165,20 +178,23 @@ The following table details the tasks to be performed by the user to add members
 \end{tabular}
 \captionsetup{skip=5pt} % Adjust the skip value as per your needs
 \caption{Add members use case}
+\label{addmembers_table}
 
 \end{table}
 \subsubsection{Consult synthetic dashboard use case refinement}
 In our application, the community manager and the system administrator can access a dashboard containing features that helps them to manage their respective communities.\\
-The following figure shows the Consult synthetic use case diagram.
+The figure \ref{dashboard_uc} shows the "Consult synthetic dashboard" use case diagram.
 \begin{figure}[H]%
     \center   
     \includegraphics[scale=0.5]{Consult synthetic dashboard UC.jpg}
     \caption{Consult synthetic dashboard use case diagram}
+    \label{dashboard_uc}
 \end{figure}
 
-The following table details the tasks to be performed by the customer to consult the synthetic dashboard
+The table \ref{dashboard_table} details the tasks to be performed by the customer to consult the synthetic dashboard
 in our application.
 \begin{table}[H]
+
 \begin{tabular}{|ll|}
 \hline
 \multicolumn{2}{|c|}{\textbf{Summary}}                                                                                                                                                                                       \\ \hline
@@ -188,21 +204,24 @@ in our application.
 \multicolumn{2}{|c|}{\textbf{Description of sequences}}                                                                                                                                                                      \\ \hline
 \multicolumn{1}{|l|}{Pre-condition}              & \begin{tabular}[c]{@{}l@{}}- User should be authenticated to Salesforce\\ - User should be the owner of at least one community\end{tabular}                               \\ \hline
 \multicolumn{1}{|l|}{Post-condition}             & \begin{tabular}[c]{@{}l@{}}- System administrator is well informed\\ about his respective community's KPIs.\end{tabular}                                \\ \hline
-\multicolumn{1}{|l|}{Normal scenario}            & \begin{tabular}[c]{@{}l@{}}1. User accesses the dashboard interface\\ 2. Multiple KPI charts pops up \\ 3. User may click a bar from the developers' Error Metrics Chart\\ to access error logs specific to the selected developer \end{tabular}       \\ \hline
+\multicolumn{1}{|l|}{Normal scenario}            & \begin{tabular}[c]{@{}l@{}}1. User accesses the dashboard interface\\ 2. Multiple KPI charts pop up \\ 3. Users may click a bar from the developers' Error Metrics Chart\\ to access error logs specific to the selected developer \end{tabular}       \\ \hline
 \multicolumn{1}{|l|}{Alternative scenario}       &                                                                                                                                                                           \\ \hline
 \multicolumn{1}{|l|}{Non-functional constraints} & 1. The interface must be ergonomic                                                                                                                                        \\ \hline
 \end{tabular}
 \caption{Consult synthetic dashboard use case}
+\label{dashboard_table}
 \end{table}
 \subsubsection{Consult the failed login attempts use case refinement}
 In our application, the community manager and the system administrator can manage failed login attempts committed by their community's members as well as send security warning emails containing details about the event to concerned members.\\
+The figure \ref{loginattempts_uc} shows the "consult failed login attempts" use case diagrams.
 \begin{figure}[H]%
     \center   
     \includegraphics[scale=0.5]{Consult failed login attempts.jpg}
     \caption{Consult failed login attempts use case diagram}
+    \label{loginattempts_uc}
 \end{figure}
 
-The following table details the tasks to be performed by the customer to consult the failed login attempts
+The table \ref{loginattempts_table} details the tasks to be performed by the customer to consult the failed login attempts
 in our application.
 \begin{table}[H]
 \begin{tabular}{|ll|}
@@ -219,20 +238,23 @@ in our application.
 \multicolumn{1}{|l|}{Non-functional constraints} & \begin{tabular}[c]{@{}l@{}}1. The interface must be ergonomic\\ 2. Error messages should be understandable and clear\end{tabular}                                                                                                                                                                                                                                                                                                                                                                             \\ \hline
 \end{tabular}
 \caption{Consult failed login attempts use case}
+\label{loginattempts_table}
 \end{table}
 
 
 
 \subsubsection{Access Chatbot use case refinement}
-The following figure illustrates the use case diagram "Access Chatbot"
+In our application, the community manager and the system administrator can access a smart Chatbot interface to benefit from a Salesforce digital assistant that will provide information about Salesforce and its features as well as provide information about the current community.\\ 
+The figure \ref{chatbot_uc} illustrates the use case diagram "Access Chatbot"
 
 \begin{figure}[H]%
     \center   
     \includegraphics[scale=0.5]{Access Chatbot.jpg}
     \caption{Access Chatbot use case diagram}
+    \label{chatbot_uc}
 \end{figure}
 
-The following table details the tasks to be performed by the customer to Access the Chatbot within our app.
+The table \ref{chatbot_table} details the tasks to be performed by the customer to Access the Chatbot within our app.
 \begin{table}[H]
 \begin{tabular}{|ll|}
 \hline
@@ -249,6 +271,8 @@ The following table details the tasks to be performed by the customer to Access 
 \end{tabular}
 
 \caption{Access Chatbot use case}
+    \label{chatbot_table}
+
 \end{table}
 
 \pagebreak

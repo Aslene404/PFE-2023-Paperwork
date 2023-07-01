@@ -148,11 +148,12 @@ frequently used by developers. Within our application, it was mainly used for co
 \subsection{Deployment diagram of the application}
 The deployment diagram models the physical architecture of a system.
 This diagram shows the topology of the software elements that are deployed over the material elements.
-The following figure represents the deployment diagram of our application.
+The figure \ref{deploymentdiagram} represents the deployment diagram of our application.
 \begin{figure}[H]%
     \center   
     \includegraphics[scale=0.4]{DeploymentDiagram.jpg}
     \caption{Deployment diagram of the application}
+    \label{deploymentdiagram}
 \end{figure}
 Our application's deployment diagram is composed of 3 Nodes:
 \begin{itemize}
@@ -174,78 +175,88 @@ REST(representational state transfer) APIs, the resulting data is exploited thro
 In this part, we present the different features of our
 application by presenting the graphical interfaces produced:
 \subsection{Launching the application}
-The following figure represents the landing page of the application where the user can choose to access one of his owned communities or search for a specific one by its name using the provided search bar.
+The figure \ref{landing} represents the landing page of the application where the user can choose to access one of his owned communities or search for a specific one by its name using the provided search bar.
 \begin{figure}[H]%
     \center   
     \includegraphics[scale=0.4]{home.png}
     \caption{Community selection interface (landing page of the application)}
+    \label{landing}
 \end{figure}
 \subsection{Community Dashboard}
-The following figure represents the community dashboard, that shows up upon accessing the selected community bu the user, containing KPIs charts that help the user monitor his community.\\
-The following figure represents respectively the accounts distribution chart, Salesforce user licenses distribution chart, and login attempts status distribution chart for the current community.
+The figures \ref{dashboard1}, \ref{dashboard2}, \ref{dashboard3}, \ref{dashboard4} represent the community dashboard, which shows up upon accessing the selected community by the user, containing KPIs charts that help the user monitor his community.\\
+The figure \ref{dashboard1} represents respectively the accounts distribution chart, Salesforce user licenses distribution chart, and login attempts status distribution chart for the current community.
 \begin{figure}[H]%
     \center   
     \includegraphics[scale=0.4]{dashboard1.png}
     \caption{Community dashboard interface (distribution charts)}
+    \label{dashboard1}
 \end{figure}
-The following figure represents the time spent in the community chart that shows the number of hours and minutes spent by each member when surfing the current community.
+The figure \ref{dashboard2} represents the time spent in the community chart that shows the number of hours and minutes spent by each member when surfing the current community.
 \begin{figure}[H]%
     \center   
     \includegraphics[scale=0.4]{dashboard2.png}
     \caption{Community dashboard interface (time spent in the community chart)}
+    \label{dashboard2}
 \end{figure}
-The following figure represents the community developers' error metrics chart that shows the number of programming errors faced by each developer working in the current community.
+The figure \ref{dashboard3} represents the community developers' error metrics chart that shows the number of programming errors faced by each developer working in the current community.
 \begin{figure}[H]%
     \center   
     \includegraphics[scale=0.4]{dashboard3.png}
     \caption{Community dashboard interface (developers' error metrics chart)}
+    \label{dashboard3}
 \end{figure}
-Upon clicking on one of the bars displayed in the previous chart the complete error logs specific to the selected developer will be displayed as shown in the following figure.
+Upon clicking on one of the bars displayed in the previous chart the complete error logs specific to the selected developer will be displayed as shown in the figure \ref{dashboard4}.
 \begin{figure}[H]%
     \center   
     \includegraphics[scale=0.4]{dashboard4.png}
     \caption{Community developer error logs interface}
+    \label{dashboard4}
 \end{figure}
 \subsection{User list }
-The following figure represents the community members list where the user can navigate through his community members' information using given pagination options. He may also filter displayed members by user status (active or inactive), account name, or profile label using the given combo boxes or search for a specific user using his Salesforce user name, full name, or email using the provided search bar. The user can perform actions on one or multiple members, these actions can be activating/deactivating selected members, sending welcome emails to selected members, or sending reset password reset emails to selected members. 
+The figure \ref{userlist1} represents the community members list where the user can navigate through his community members' information using given pagination options. He may also filter displayed members by user status (active or inactive), account name, or profile label using the given combo boxes or search for a specific user using his Salesforce user name, full name, or email using the provided search bar. The user can perform actions on one or multiple members, these actions can be activating/deactivating selected members, sending welcome emails to selected members, or sending reset password reset emails to selected members. 
 
 \begin{figure}[H]%
     \center   
     \includegraphics[scale=0.4]{userlist1.png}
     \caption{User list interface}
+    \label{userlist1}
 \end{figure}
-The user may also consult details about a specific user as well as update said details as shown in the following figure, the show details action is only selectable when selecting one community member.
+The user may also consult details about a specific user as well as update said details as shown in the figure \ref{userlist2}, the show details action is only selectable when selecting one community member.
 \begin{figure}[H]%
     \center   
     \includegraphics[scale=0.4]{userlist2.png}
     \caption{User details interface}
+    \label{userlist2}
 \end{figure}
 
 \subsection{Add users}
-The following figure represents the add users form interface where the user can add one or multiple users using the displayed form fields. The user can fill the initial given form and press the "submit all displayed forms" button where the system will prompt any error message if it exists or the success of the operation otherwise. The user is also able to clone the previously filled form, add a new empty one or delete the latest one using the given buttons.
+The figure \ref{useradd} represents the add users form interface where the user can add one or multiple users using the displayed form fields. The user can fill out the initial given form and press the "submit all displayed forms" button where the system will prompt any error message if it exists or the success of the operation otherwise. The user is also able to clone the previously filled form, add a new empty one, or delete the latest one using the given buttons.
 \begin{figure}[H]%
     \center   
     
     \includegraphics[scale=0.4]{useradd.png}
     \caption{Add users interface}
+    \label{useradd}
 \end{figure}
 \subsection{Connection history}
-The following figure represents the connection history interface that shows the number of logins for each user based on the given "from" and "to" dates and time or the time range filter where the user can interact with both of these filters to change the displayed chart.  
+The figure \ref{history1} represents the connection history interface that shows the number of logins for each user based on the given "from" and "to" dates and time or the time range filter where the user can interact with both of these filters to change the displayed chart.  
 \begin{figure}[H]%
     \center   
     
     \includegraphics[scale=0.5]{history1.png}
     \caption{Connection history interface (chart)}
+    \label{history1}
 \end{figure}
-The user may also click one of the displayed bars on the displayed chart to access brief details about the concerned user and update his Salesforce user license as shown in the following figure.
+The user may also click one of the displayed bars on the displayed chart to access brief details about the concerned user and update his Salesforce user license as shown in the figure \ref{history2}.
 \begin{figure}[H]%
     \center   
     
     \includegraphics[scale=0.5]{history2.png}
     \caption{Connection history interface (user details)}
+    \label{history2}
 \end{figure}
 \subsection{Failed login attempts}
-The following figure represents the community members' failed login attempts list where the user can navigate through his community login events using given pagination options. He may also filter displayed events by status (invalid password, no community access etc) using the given combo box or search for a specific event using concerned user's Salesforce user name or full name using the provided search bar, he may also filter displayed results by date and time using the provided "from" and "to" filters.\\
+The figure \ref{loginattempts1} represents the community members' failed login attempts list where the user can navigate through his community login events using given pagination options. He may also filter displayed events by status (invalid password, no community access, etc) using the given combo box or search for a specific event using the concerned user's Salesforce user name or full name using the provided search bar, he may also filter displayed results by date and time using the provided "from" and "to" filters.\\
 The user can also choose to show more details about a specific login event or send a security warning email to the concerned user using the given action menu.
 
 \begin{figure}[H]%
@@ -253,22 +264,25 @@ The user can also choose to show more details about a specific login event or se
     
     \includegraphics[scale=0.5]{loginattempts1.png}
     \caption{Failed login attempts interface (event list)}
+    \label{loginattempts1}
 \end{figure}
-The following figure represents the selected login event's details interface where the user can navigate the map displaying the event's location in addition to consulting further details about it.
+The figure \ref{loginattempts2} represents the selected login event's details interface where the user can navigate the map displaying the event's location in addition to consulting further details about it.
  \begin{figure}[H]%
     \center   
     
     \includegraphics[scale=0.5]{loginattempts2.png}
     \caption{Failed login attempts interface (event details)}
+    \label{loginattempts2}
 \end{figure}
 \subsection{Chatbot}
-The following figure represents the Chatbot interface which is accessible from anywhere in the main screen of our application using the floating Chatbot button. In this interface the user may choose one of the predefined questions or type his own question, upon submitting the question the answer will be displayed on screen where the user may choose to give positive or negative feedback to the developers for future improvements.
+The figure \ref{chatbot} represents the Chatbot interface which is accessible from anywhere on the main screen of our application using the floating Chatbot button. In this interface, the user may choose one of the predefined questions or type his question, upon submitting the question the answer will be displayed on the screen where the user may choose to give positive or negative feedback to the developers for future improvements.
 
 \begin{figure}[H]%
     \center   
     
     \includegraphics[scale=0.5]{chatbot.png}
     \caption{Chatbot interface}
+    \label{chatbot}
 \end{figure}
 \section*{Conclusion}
 In this chapter, we presented the technical specification of our

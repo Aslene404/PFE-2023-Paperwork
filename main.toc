@@ -7,51 +7,51 @@
 \contentsline {section}{\numberline {1.2}Project presentation}{4}{section.1.2}%
 \contentsline {subsection}{\numberline {1.2.1}Context}{4}{subsection.1.2.1}%
 \contentsline {subsection}{\numberline {1.2.2}Problem}{7}{subsection.1.2.2}%
-\contentsline {subsection}{\numberline {1.2.3}Proposed solution}{7}{subsection.1.2.3}%
+\contentsline {subsection}{\numberline {1.2.3}Proposed solution}{8}{subsection.1.2.3}%
 \contentsline {subsection}{\numberline {1.2.4}Objectives}{8}{subsection.1.2.4}%
-\contentsline {section}{\numberline {1.3}Study of the existing}{9}{section.1.3}%
-\contentsline {section}{\numberline {1.4}Development process}{11}{section.1.4}%
-\contentsline {subsection}{\numberline {1.4.1}Incremental development}{11}{subsection.1.4.1}%
-\contentsline {subsection}{\numberline {1.4.2}Provisional schedule of tasks}{11}{subsection.1.4.2}%
-\contentsline {chapter}{\numberline {2}Specification of needs}{13}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Identification of actors}{13}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Functional Needs}{15}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Non-functional Needs}{16}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Use case diagrams}{17}{section.2.4}%
-\contentsline {subsection}{\numberline {2.4.1}Global use case diagram}{17}{subsection.2.4.1}%
-\contentsline {subsection}{\numberline {2.4.2}Use case refinement}{18}{subsection.2.4.2}%
-\contentsline {subsubsection}{\numberline {2.4.2.1}Consult user list use case refinement}{18}{subsubsection.2.4.2.1}%
-\contentsline {subsubsection}{\numberline {2.4.2.2}Add members use case refinement}{21}{subsubsection.2.4.2.2}%
-\contentsline {subsubsection}{\numberline {2.4.2.3}Consult synthetic dashboard use case refinement}{23}{subsubsection.2.4.2.3}%
-\contentsline {subsubsection}{\numberline {2.4.2.4}Consult the failed login attempts use case refinement}{24}{subsubsection.2.4.2.4}%
-\contentsline {subsubsection}{\numberline {2.4.2.5}Access Chatbot use case refinement}{26}{subsubsection.2.4.2.5}%
-\contentsline {chapter}{\numberline {3}Conception}{30}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Global Architecture}{30}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Definition of the Model-View-Controller design pattern}{30}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Application of the "MVC" pattern}{32}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Dynamic view of the application}{41}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Detailed sequence diagram of the "Choose community" use case}{41}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Detailed sequence diagram of the "Access synthetic dashboard" use case}{42}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Detailed sequence diagram of the "Consult users List" use case}{44}{subsection.3.2.3}%
-\contentsline {subsection}{\numberline {3.2.4}Detailed sequence diagram of the "Add members" use case}{45}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}Detailed sequence diagram of the "Consult failed login attempts" use case}{46}{subsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.2.6}Detailed sequence diagram of the "Consult connection history" use case}{47}{subsection.3.2.6}%
-\contentsline {subsection}{\numberline {3.2.7}Detailed sequence diagram of the "Access Chatbot" use case}{48}{subsection.3.2.7}%
-\contentsline {chapter}{\numberline {4}Implementation}{50}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Technical specification}{50}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Hardware environment}{50}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Software environment}{51}{subsection.4.1.2}%
-\contentsline {subsubsection}{\numberline {4.1.2.1}Software tools}{51}{subsubsection.4.1.2.1}%
-\contentsline {subsubsection}{\numberline {4.1.2.2}APIs and libraries}{57}{subsubsection.4.1.2.2}%
-\contentsline {subsubsection}{\numberline {4.1.2.3}Programming languages and frameworks}{58}{subsubsection.4.1.2.3}%
-\contentsline {subsection}{\numberline {4.1.3}Deployment diagram of the application}{60}{subsection.4.1.3}%
-\contentsline {section}{\numberline {4.2}Application interfaces}{61}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Launching the application}{61}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Community Dashboard}{62}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}User list }{65}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Add users}{66}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.2.5}Connection history}{67}{subsection.4.2.5}%
-\contentsline {subsection}{\numberline {4.2.6}Failed login attempts}{69}{subsection.4.2.6}%
-\contentsline {subsection}{\numberline {4.2.7}Chatbot}{71}{subsection.4.2.7}%
-\contentsline {chapter}{Conclusion and perspectives}{73}{chapter*.57}%
+\contentsline {section}{\numberline {1.3}Study of the existing}{10}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Development process}{14}{section.1.4}%
+\contentsline {subsection}{\numberline {1.4.1}Incremental development}{14}{subsection.1.4.1}%
+\contentsline {subsection}{\numberline {1.4.2}Provisional schedule of tasks}{15}{subsection.1.4.2}%
+\contentsline {chapter}{\numberline {2}Specification of needs}{17}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Identification of actors}{17}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Functional Needs}{19}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Non-functional Needs}{20}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Use case diagrams}{21}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Global use case diagram}{21}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Use case refinement}{23}{subsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.2.1}Consult user list use case refinement}{23}{subsubsection.2.4.2.1}%
+\contentsline {subsubsection}{\numberline {2.4.2.2}Add members use case refinement}{26}{subsubsection.2.4.2.2}%
+\contentsline {subsubsection}{\numberline {2.4.2.3}Consult synthetic dashboard use case refinement}{28}{subsubsection.2.4.2.3}%
+\contentsline {subsubsection}{\numberline {2.4.2.4}Consult the failed login attempts use case refinement}{29}{subsubsection.2.4.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.2.5}Access Chatbot use case refinement}{31}{subsubsection.2.4.2.5}%
+\contentsline {chapter}{\numberline {3}Conception}{35}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Global Architecture}{35}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Definition of the Model-View-Controller design pattern}{35}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Application of the "MVC" pattern}{37}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Dynamic view of the application}{46}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Detailed sequence diagram of the "Choose community" use case}{46}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Detailed sequence diagram of the "Access synthetic dashboard" use case}{47}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Detailed sequence diagram of the "Consult users List" use case}{49}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Detailed sequence diagram of the "Add members" use case}{50}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Detailed sequence diagram of the "Consult failed login attempts" use case}{51}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Detailed sequence diagram of the "Consult connection history" use case}{52}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.7}Detailed sequence diagram of the "Access Chatbot" use case}{53}{subsection.3.2.7}%
+\contentsline {chapter}{\numberline {4}Implementation}{55}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Technical specification}{55}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Hardware environment}{55}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Software environment}{56}{subsection.4.1.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.1}Software tools}{56}{subsubsection.4.1.2.1}%
+\contentsline {subsubsection}{\numberline {4.1.2.2}APIs and libraries}{62}{subsubsection.4.1.2.2}%
+\contentsline {subsubsection}{\numberline {4.1.2.3}Programming languages and frameworks}{63}{subsubsection.4.1.2.3}%
+\contentsline {subsection}{\numberline {4.1.3}Deployment diagram of the application}{65}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Application interfaces}{66}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Launching the application}{66}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Community Dashboard}{67}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}User list }{70}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Add users}{71}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Connection history}{72}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.6}Failed login attempts}{74}{subsection.4.2.6}%
+\contentsline {subsection}{\numberline {4.2.7}Chatbot}{76}{subsection.4.2.7}%
+\contentsline {chapter}{Conclusion and perspectives}{78}{chapter*.63}%
 \setcounter {tocdepth}{3}
